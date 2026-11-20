@@ -260,6 +260,8 @@ body.navbig .nav .chip{font-size:14px;padding:6px 12px}body.navbig .nav .who{fon
 .nav .who{display:inline-block;min-width:62px;text-align:center;white-space:nowrap}
 @media(max-width:760px){.nav .chipw{flex-direction:column;width:104px}}
 .cm .mst{display:block;margin-top:2px;font:12px var(--mono);letter-spacing:.06em}.cm .mst.send{color:#ffd400}.cm .mst.ok{color:#1aff6e}.cm .mst.bad{color:var(--red)}
+.linkbtn{background:none;border:0;color:var(--ac);font:inherit;cursor:pointer;text-decoration:underline;padding:0;margin-right:12px}.linkbtn:hover{color:#fff}
+@media(max-width:480px){.modal .tog{flex-wrap:wrap;gap:8px}.modal .tog .row{flex-wrap:wrap!important;flex:1 1 100%!important}.modal .tog .btn{max-width:100%}}
 
 </style>
 </head><body>
@@ -338,13 +340,13 @@ body.navbig .nav .chip{font-size:14px;padding:6px 12px}body.navbig .nav .who{fon
   <div class="grid" id="grid"></div>
  </section>
 </main>
-<footer><span>© 2026 GLITCH GAME X // ALL SIGNALS RESERVED</span><span id="footSync">LOCAL</span></footer>
+<footer><span>© 2026 GLITCH GAME X // ALL SIGNALS RESERVED</span><span><button class="linkbtn" id="policyBtn" type="button">Rules &amp; Privacy</button> <span id="footSync">LOCAL</span></span></footer>
 <div id="layer"></div><div id="toasts"></div>
 
 <script>
 /* Glitch Game X app */
 (()=>{'use strict';
-const CFG={"SEALED":{"iv":"ZwR7XvjYHF3/hfRK7hUHjw==","ct":"ZkwU3cx4jKX6F/d8tihG5zc3awKIO9AFTexgx8INfgZELt7ZnVXX/2nv7qpZVIxzM+7TwvAqdVU=","mac":"ukTlF5NUmXqMTi+swYmWsYZsHf/IGiVlkgtyAX87rBU="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"o85oio3ns5KG7RSnaw3Wlw==","ct":"9AteSd+pvgEz/wFGTpq52bYODH5X6Que0DqTTk5lxoc4x0VfOAynRZxE0Hhoy72XtZEh9NRbNco=","mac":"+tw/fHvwPChcK2EfnIqwgeYoZdDDW9svphKa/18WA+Q="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":{"iv":"lmBzLnb5RTeMGBULnRs2kg==","ct":"GsDfOGiJqJzSujZRqeC80M8VmXUxCje5ObN7HQ0VU+I=","mac":"lM80t8bMhlDrwUWCmyueK0qPjsjQ7Lt/nOLG8NLQC9w="},"BK":[{"iv":"zYhMxRW/4IZbbTfn+WcVRQ==","ct":"TMc9FEJanaXRlPXK9QcoSwsunuzBFwJTFf+6z0nK6Y1EchTT7tcfxEzhyHcMSnc/OvabwRtTERU=","mac":"Iz/ohSJba2H/k8qA7jJsdSlaCrjVJzyNCfp+uM0ZB2A="},{"iv":"nqJ0LftIRiBIHtaMzSaBjQ==","ct":"v10DYaiU8gMD4a2DNEQHcevJZ3uhVitkRdp02gMgqBpHzpaheBRmUg+yqBH2OASwcw/5f2w2s2c=","mac":"ivG6d7NbeEAsk6UcpdjDa3EaLbK5H1qAh7u87Pnykg0="},{"iv":"RRDxMxmTiMZwhb9aSHZqNQ==","ct":"aAML/GXPxEToOMMc68Z0Fs9CosSdjzf/aH3pOojODd3TspxPdI7eW119eTK/8zVDVkqv4ylT+C8=","mac":"8xtHtd4kYEUPL6evi2Dy8cdRcndEgmcWzlfsmTlizQ0="},{"iv":"VEEIjREsXyufK/QIpFHYmw==","ct":"lIEDGLokC8czWE6WmVC9/1gNj7t94RVS4u+W42XgAn1mBXKmvvyzxuqcZXEgiU4m3yewnUIijiA=","mac":"xB+fRY37BeWFh63O8G8QUK3EGK/KfPRj/vv0XCBsRnw="}],"SCANK":{"iv":"rG74e7mHp4P/aAMNSEhaRQ==","ct":"kTIhObGOvzXr/hjiQ1lU0QFD+IuCo8bJp9/LcoUkrDVFdXT/p+uJ8ltrAjXm7andU7SiUIV0STk=","mac":"oOgIKVG/mwilOxpKqiVur2CD7RpzAIHol9jlPY0mXCo="},"RECK":{"iv":"iJ5cEvzarGbXqntsA7cU0A==","ct":"AVQPLzJvxoyRdn+4cqP7wkdyM/322E13TcK761ffFNqMLSLeJFuG6LZwObO/NbZtXV6ylX48EtQ=","mac":"cSXWJFDCJoNSx/sVOyQfusV4Buf5bl8+FR8uwn4hjvU="}};
+const CFG={"SEALED":{"iv":"/f1LjAkpp37gCGWNwFYzLg==","ct":"xV5L8sIwyo7jyoyubRz3+kQp8JH41cboAQLl9JWiNLUnn0VugbljtDs9t6tLtcqfgd5pmmQ6le8=","mac":"fLRmDcYczHM9tDRC5UmTdAVe9l8TbaFdRqOyW6H0Glk="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"EtTI4DB4MjJwT38kRS9AEA==","ct":"zUadmFjfWZdP2BFEntUSywQ3dP9qi5el0tQojsE52YtBFR38nN22qU5Rua/h4/etnDUtEQGXZyc=","mac":"rKm0lyY0ZzL+Gc4Q56msRVGQV/c8PZrfnK/JLPBZIHE="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":null,"BK":[{"iv":"m5AJJUBjBLwiyMuYBm95Vg==","ct":"+LO1j+264oUKpDIi7rFKTVkO8uQ5QRt4RVFO/H4ah9FFHu5BhXrVG/K6nonwK8vvjzQ9AJYAyYc=","mac":"a1tbuZxeRrMdEfRwjc1VHiWarEBrMZwrf+et7aXSoRM="},{"iv":"LBF+YlZUzlKgnJGgD+XOWw==","ct":"P8ZNIz/q0JDo062stx8buyEKpLqKn6RGQ1fvULp5+z0wOll1gLQ/uihHrHeKhmfb95HdHvD2tJs=","mac":"Qp4CrtzM4zd4kGfxgj8sjnw1k71WOVGx9RGZNDUWZ9w="},{"iv":"+1BP2BcZPnHEkGEVeyqxyw==","ct":"2l25fhZBL1ehg/894bTfURr8vdRWrzqw2jXl4R1zPSJFShQ3WJYlJQj4oQdBK9hFVKdrd5CMkIQ=","mac":"ZpT1CRzpnRqBkx2pcHd8dL2iBTojxBl/H+htSciJMrI="},{"iv":"7pjTDsBl8NBm4i+JAGi1Qw==","ct":"dWQ+fIE3WHkXgEDDr52mPZ+Y66kE+LaB2T2ZjGTQW+h14+S/fBKJjvgjOxK9yh7XqYVOTB32wNA=","mac":"SXDBpMQd987khKT6ylgb+cX3fQjdV90OvJ6ctmelpos="}],"SCANK":{"iv":"VhRz1VCd/nk3ghouw6ErMQ==","ct":"0IUbtlOCDDR18du5/qUskGOkK6u+VW+llBx762/oBJErWcamoLl2gbryw2lNTX6M92IeCDJApWM=","mac":"6pB8/rPa935c1bfkEVoDBP7vsvPIwCXqeX3MArPhQcM="},"RECK":{"iv":"ZhqYaEVlUjsIGg4w59V2zg==","ct":"Sc9GoQK/kgqVTjdAbeU5aoucBc0PXEPc9ismwJmT4+/gzHB3SvFq4XNE5tdKVeB/b85QJ6RchEo=","mac":"Qi7G1dQ/1gRIKwtiUuEqsskT+jJkezEM+qPVYSQuwmo="}};
 /* ============ CORE: utils, storage, crypto ============ */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -889,6 +891,17 @@ function openModal({ title, cls = '', wide = false, body = [], onClose, esc = tr
   setTimeout(() => softFocus(m, m.querySelector('input,textarea,.btn')), 30);
   return api;
 }
+/* keep keyboard focus inside the open window (Tab / Shift+Tab loop through its buttons and fields instead of escaping to the page behind) */
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Tab' || !modals.length) return;
+  const top = modals[modals.length - 1], root = top.el || top.ov; if (!root) return;
+  const f = [...root.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]):not([type=hidden]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])')].filter(x => x.offsetParent !== null && x.tabIndex >= 0);
+  if (!f.length) { e.preventDefault(); return; }
+  const first = f[0], last = f[f.length - 1], a = document.activeElement;
+  if (!root.contains(a)) { e.preventDefault(); (e.shiftKey ? last : first).focus(); }
+  else if (e.shiftKey && a === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && a === last) { e.preventDefault(); first.focus(); }
+});
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { const t = modals[modals.length - 1]; if (t && t.esc) t.close(); else if (!t && $('#plusMenu') && !$('#plusMenu').classList.contains('hide')) closeMenu(); }
 });
@@ -1863,6 +1876,26 @@ function openBanList() {
   };
   draw();
 }
+/* ---- Firebase chat ("stronger chat"): messages live at <database>/chat/<id>, streamed live with EventSource.
+   The main database is the main room and the backup database is the backup room. ntfy.sh is only a fallback until the Firebase rules allow chat. ---- */
+const FB_ALPHA = '-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz';
+function pushId(ts) { let t = ts, s = ''; for (let i = 0; i < 8; i++) { s = FB_ALPHA.charAt(t % 64) + s; t = Math.floor(t / 64); } const r = crypto.getRandomValues(new Uint8Array(12)); for (let i = 0; i < 12; i++) s += FB_ALPHA.charAt(r[i] % 64); return s; }
+const fbRootOf = u => { const m = /^(https?:\/\/[^\/]+)\/glitchgamez\.json(?:\?.*)?$/.exec(String(u || '')); return m ? m[1] : ''; };
+const CHAT_KEEP = 6 * 3600e3, FBQ_KEY = 'orderBy=%22%24key%22';
+/* ---- chat rules + privacy (shown the first time you open chat, and from the footer) ---- */
+const POLICY_V = 1;
+function openPolicy(needAccept) {
+  return new Promise(res => {
+    const li = t => h('li', {}, t), sec = t => h('h4', { style: 'margin:14px 0 6px;font:700 13px var(--mono);letter-spacing:.1em;color:var(--ac)' }, t);
+    const agree = h('button', { class: 'btn lime', type: 'button', onclick: () => { Store.set('gg.chatpolicy', POLICY_V); m.close(true); } }, '\u2714 I agree'), no = h('button', { class: 'btn red', type: 'button', onclick: () => m.close(false) }, needAccept ? 'No thanks' : 'Close');
+    const m = openModal({ title: 'Chat rules & privacy', wide: true, onClose: v => res(v === true), body: [h('div', { style: 'max-height:55vh;overflow:auto;padding-right:6px;line-height:1.5' },
+      sec('CHAT RULES'), h('ul', {}, li('Be kind. No bullying, hate, threats or harassment.'), li('No sexual content: no nude or sexual pictures, no asking for them, no sexual talk. Those messages are blocked and never sent.'), li('Never share personal details: home address, phone number, email, school, or where you will be. Those are replaced with #s.'), li('No scams, viruses, malware or links to harmful sites. Files are scanned and unsafe ones are blocked.'), li('No spam or flooding.'), li('Staff can ban you from chat for any length of time, hide your messages, or clear the whole chat.')),
+      sec('WHAT IS PUBLIC'), h('ul', {}, li('Everything you write in chat is public: everyone on the site can read it. Your username is shown with every message.'), li('Messages are kept on our chat servers for a few hours, then removed. Other people may still copy or screenshot them.'), li('Games you share, pictures, files and GIFs you send are visible to everyone in chat. Uploaded files are stored on ntfy.sh for about 3 days.')),
+      sec('SAFETY CHECKS & OTHER SERVICES'), h('ul', {}, li('To keep chat safe, your messages and pictures may be checked by an AI service (Groq) before they are sent. Videos and PDFs are checked the same way.'), li('GIFs come from GIPHY. GIPHY can see your internet address when you search.'), li('The chat and the site data are stored with Google Firebase.')),
+      sec('YOUR ACCOUNT'), h('ul', {}, li('Your username and profile (photo, bio, followers) are public. Your email is stored only in scrambled form. Passwords are never stored in readable form.'), li('We do not show ads or sell information. Some choices (age, settings, keys you paste) are saved only in your browser.'), li('If you are under 13, ask a parent or guardian before using chat.'), li('Something wrong or unsafe? Tell a staff member in chat.')),
+      h('p', { class: 'hint', style: 'margin-top:12px' }, 'This is a small hobby site. By using chat you agree to these rules. Breaking them can get you banned.')), h('div', { class: 'row', style: 'margin-top:12px' }, needAccept ? agree : null, no)] });
+  });
+}
 function fileCard(f) {
   const c = h('div', { class: 'fcard' }), badge = h('span', { class: 'chip ' + (f.s === 'clean' ? 'ok' : 'busy') }, h('i'), f.s === 'clean' ? 'SCANNED' : 'CHECKED');
   if (f.k === 'image') c.append(h('img', { src: f.url, alt: f.n, loading: 'lazy' }));
@@ -1881,6 +1914,14 @@ const Chat = {
   get allRooms() { return [CFG.CHAT.TOPIC, CFG.CHAT.TOPIC2].map(t => t ? CFG.CHAT.URL + '/' + t : null); },
   /* rooms staff have not switched off (main = module chat1, backup = chat2) */
   get rooms() { return this.allRooms.filter((u, i) => u && !modOff(i ? 'chat2' : 'chat1')); },
+  fbOk: [false, false],
+  fbRoots() { const u = Sync.urls(); return [fbRootOf(u[0]), fbRootOf(u[1])]; },
+  /* Firebase rooms that work right now and are not switched off by staff */
+  fbSlots() { const r = this.fbRoots(); return [0, 1].filter(i => r[i] && this.fbOk[i] && !modOff(i ? 'chat2' : 'chat1')); },
+  async fbPrune(i) {   /* old messages are deleted by whoever sends next (best effort) */
+    try { const root = this.fbRoots()[i], end = pushId(now() - CHAT_KEEP).slice(0, 8); const d = await (await fetchT(root + '/chat.json?' + FBQ_KEY + '&endAt=%22' + encodeURIComponent(end) + '%22&limitToFirst=20', { cache: 'no-store' }, 8000)).json();
+      for (const k of Object.keys(d || {})) fetchT(root + '/chat/' + encodeURIComponent(k) + '.json', { method: 'DELETE' }, 8000).catch(() => {}); } catch (e) {}
+  },
   /* staff "clear chat": a marker message goes to BOTH rooms; every device hides everything sent before it */
   applyClear(t, box, sysLine, announce) {
     if (!(t > this.clearT)) return; this.clearT = t; Store.set('gg.chatclear', t);
@@ -1889,28 +1930,45 @@ const Chat = {
   async postClear() {
     if (!isStaff()) throw new Error('Only staff can clear the chat.');
     const t = now(), body = JSON.stringify({ u: me().name, m: '\u{1F9F9} chat cleared', t, clr: t }); let sent = 0;
-    for (const u of this.allRooms.filter(Boolean)) { try { const r = await fetchT(u, { method: 'POST', body }, 10000); if (r.ok) sent++; } catch (e) {} }
+    const fbs = this.fbSlots();
+    if (fbs.length) { const roots = this.fbRoots(); for (const i of fbs) { try { const r = await fetchT(roots[i] + '/chat/' + pushId(t) + '.json', { method: 'PUT', body }, 10000); if (r.ok) sent++; } catch (e) {} } }
+    else for (const u of this.allRooms.filter(Boolean)) { try { const r = await fetchT(u, { method: 'POST', body }, 10000); if (r.ok) sent++; } catch (e) {} }
     if (!sent) throw new Error('Could not reach either chat server.');
     return { t, sent };
   },
   applySys() {
-    const sig = this.rooms.join(); if (sig === this._sig) return; this._sig = sig; this.bad = {};
-    if (!this.rooms.length) { this.set(false); if (this.win && this.modal) this.modal.close(); }
+    const sig = this.rooms.join() + '|' + this.fbSlots().join(); if (sig === this._sig) return; this._sig = sig; this.bad = {};
+    if (!this.rooms.length && !this.fbSlots().length) { this.set(false); if (this.win && this.modal) this.modal.close(); }
     else { this.probe(); if (this.win && this.mkEs) this.mkEs(); }
   },
   get base() { return this.rooms[0]; },
   async postMsg(msg) {
+    const fbs = this.fbSlots();
+    if (fbs.length) {
+      const roots = this.fbRoots(), t = now(); let last;
+      for (const i of fbs.filter(i => !(this.bad['f' + i] > t)).concat(fbs.filter(i => this.bad['f' + i] > t))) {
+        try { const r = await fetchT(roots[i] + '/chat/' + pushId(msg.t || t) + '.json', { method: 'PUT', body: JSON.stringify(msg) }, 10000); if (!r.ok) throw new Error('HTTP ' + r.status); delete this.bad['f' + i]; if (Math.random() < .2) this.fbPrune(i); return i; }
+        catch (e) { last = e; this.bad['f' + i] = now() + 60000; if (/40[13]/.test(String(e.message))) { this.fbOk[i] = false; this.probe(); } }
+      }
+      if (!this.rooms.length) throw last || new Error('no room');
+    }
     const t = now(); let order = this.rooms.map((u, i) => i).filter(i => !(this.bad[i] > t)); if (!order.length) order = this.rooms.map((u, i) => i); let last;
     for (const i of order) { try { const r = await fetchT(this.rooms[i], { method: 'POST', body: JSON.stringify(msg) }, 10000); if (!r.ok) throw new Error('HTTP ' + r.status); delete this.bad[i]; return i; } catch (e) { last = e; this.bad[i] = now() + 120000; } }
     throw last || new Error('no room');
   },
   async probe() {
-    let ok = navigator.onLine && this.rooms.length > 0;
-    if (ok) { try { ok = (await fetchT(CFG.CHAT.URL + '/v1/health', { cache: 'no-store' }, 6000)).ok; } catch (e) { ok = false; } }
+    let ok = navigator.onLine; const roots = this.fbRoots();
+    if (ok) {
+      const res = await Promise.all([0, 1].map(async i => { if (!roots[i]) return false; try { return (await fetchT(roots[i] + '/chat.json?limitToLast=1&' + FBQ_KEY, { cache: 'no-store' }, 6000)).ok; } catch (e) { return false; } }));
+      const before = this.fbOk.join(); this.fbOk = res;
+      if (before !== this.fbOk.join()) { this._sig = null; if (this.win && this.mkEs) this.mkEs(); }
+      if (this.fbSlots().length) { this.set(true); return; }
+      ok = this.rooms.length > 0; if (ok) { try { ok = (await fetchT(CFG.CHAT.URL + '/v1/health', { cache: 'no-store' }, 6000)).ok; } catch (e) { ok = false; } }
+    }
     this.set(ok);
   },
   set(ok) {
-    this.online = ok; const b = $('#chatBtn'); b.disabled = !ok; b.title = ok ? 'Open chat' : (this.rooms.length ? 'Chat is offline' : 'Chat is shut down by staff');
+    this.online = ok; const b = $('#chatBtn'); b.disabled = !ok; b.title = ok ? 'Open chat' : (this.rooms.length || this.fbSlots().length ? 'Chat is offline' : 'Chat is shut down by staff');
     if (this.win) this.win.status();
   },
   start() {
@@ -1933,6 +1991,7 @@ const Chat = {
   },
   open() {
     if (!this.online) return;
+    if (me() && (Store.get('gg.chatpolicy', 0) || 0) < POLICY_V) { openPolicy(true).then(ok => { if (ok) this.open(); }); return; }
     if (!me()) { popup({ title: 'Chat', big: 'Log in first', msg: 'Chat uses your account username.', buttons: [{ label: 'Login', value: 'l' }, { label: 'Cancel', value: 'c', cls: 'mg' }], escValue: 'c', cls: 'warn' }).then(v => { if (v === 'l') openLogin(); }); return; }
     this.seen = new Set();
     const whoEl = h('div', { class: 'hint', style: 'color:var(--ac)' }), box = h('div', { class: 'cbox', 'aria-live': 'polite' }), st = h('span', { class: 'chip' }, h('i'), h('span', {}, 'CONNECTING'));
@@ -2006,13 +2065,24 @@ const Chat = {
       const me0 = me() && me().name, names = Presence.names.map(n => n === me0 ? n + ' (you)' : n), g = Presence.guests;
       whoEl.textContent = Presence.n == null ? 'ONLINE NOW: checking...' : 'ONLINE NOW (' + Presence.n + '): ' + (names.concat(g ? ['+' + g + ' guest' + (g > 1 ? 's' : '')] : []).join(', ') || 'just you');
     }, status: () => {
-      const live = this.online && this.es.some(e => e.readyState === 1), onBackup = this.bad[0] > now() && this.rooms.length > 1;
+      const live = this.online && this.es.some(e => e.readyState === 1), onBackup = this.fbSlots().length ? (!this.fbOk[0] && this.fbOk[1]) : (this.bad[0] > now() && this.rooms.length > 1);
       st.className = 'chip ' + (live ? 'ok' : this.online ? 'busy' : 'bad'); st.lastChild.textContent = live ? (onBackup ? 'LIVE // BACKUP ROOM' : 'LIVE') : this.online ? 'CONNECTING' : 'OFFLINE';
       const bn = me() && !me().staff && banOf(me().name);
       if (bn) { st.className = 'chip bad'; st.lastChild.textContent = 'BANNED'; }
       inp.disabled = send.disabled = !this.online || !!bn; inp.placeholder = bn ? 'You are banned ' + banLeft(bn) : 'Message as ' + me().name + '...';
     }, refresh: () => { [...box.children].forEach(el => { el.hidden = hiddenByBan(el.dataset.u, +el.dataset.t); }); box.querySelectorAll('.gifw').forEach(e => { e.hidden = modOff('giphy'); }); const gb = $('#shGif'); if (gb) { gb.disabled = modOff('giphy'); gb.title = modOff('giphy') ? 'GIFs are shut down by staff' : ''; } this.win && this.win.status(); } };
-    this.modal = m; this.mkEs = () => { this.es.forEach(e => e.close()); this.es = this.rooms.map(u => { const es = new EventSource(u + '/sse?since=6h'); es.onopen = es.onerror = () => this.win && this.win.status(); es.onmessage = e => { const p = this.parse(e.data); if (p) add(p); }; return es; }); this.win && this.win.status(); }; this.mkEs();
+    this.modal = m; this.mkEs = () => {
+      this.es.forEach(e => e.close()); this.es = []; const fbs = this.fbSlots();
+      if (fbs.length) {
+        const roots = this.fbRoots(), since = pushId(now() - CHAT_KEEP).slice(0, 8);
+        this.es = fbs.map(i => {
+          const es = new EventSource(roots[i] + '/chat.json?' + FBQ_KEY + '&startAt=%22' + encodeURIComponent(since) + '%22'); es.onopen = es.onerror = () => this.win && this.win.status();
+          const put = o => { if (!isObj(o)) return; const p = this.parse(JSON.stringify({ event: 'message', message: JSON.stringify(o) })); if (p) add(p); };
+          const on = e => { try { const j = JSON.parse(e.data); if (j.path === '/') { const d = j.data || {}; Object.keys(d).sort().forEach(k => put(d[k])); } else put(j.data); } catch (x) {} };
+          es.addEventListener('put', on); es.addEventListener('patch', on); return es;
+        });
+      } else this.es = this.rooms.map(u => { const es = new EventSource(u + '/sse?since=6h'); es.onopen = es.onerror = () => this.win && this.win.status(); es.onmessage = e => { const p = this.parse(e.data); if (p) add(p); }; return es; });
+      this.win && this.win.status(); }; this.mkEs();
     this.win.status(); this.win.who(); this.win.refresh(); Presence.tick(); setTimeout(() => inp.focus(), 60);
   }
 };
@@ -2025,12 +2095,27 @@ const Presence = {
     if (this.busy || document.hidden || !Chat.online) { if (!Chat.online && this.n !== null) { this.n = null; UI.syncChip(); } return; }
     this.busy = true;
     try {
-      const m0 = me(); await fetchT(this.base, { method: 'POST', body: JSON.stringify({ p: this.id, d: this.dev, u: m0 ? (m0.staff ? 'STAFF' : m0.name) : undefined }) }, 8000);
-      const r = await fetchT(this.base + '/json?poll=1&since=' + Math.ceil(this.ms * 2.5 / 1000) + 's', { cache: 'no-store' }, 8000);
-      const tabs = new Map(); /* tab id -> { d: device id, u: name } ; latest message per tab wins */
-      const mine = me() ? (me().staff ? 'STAFF' : me().name) : undefined; tabs.set(this.id, { d: this.dev, u: mine });
-      (await r.text()).split('\n').forEach(l => { try { const d = JSON.parse(l); if (d.event !== 'message') return; const m = JSON.parse(d.message); if (!m || !/^[0-9a-f]{12}$/.test(m.p) || m.p === this.id) return;
-        if (m.bye) tabs.delete(m.p); else tabs.set(m.p, { d: /^[0-9a-f]{12}$/.test(m.d || '') ? m.d : m.p, u: typeof m.u === 'string' && /^([A-Za-z0-9_]{1,24}|STAFF)$/.test(m.u) ? m.u : undefined }); } catch (e) {} });
+      const mine = me() ? (me().staff ? 'STAFF' : me().name) : undefined;
+      const tabs = new Map(); /* tab id -> { d: device id, u: name } ; latest record per tab wins */
+      tabs.set(this.id, { d: this.dev, u: mine });
+      const fbs = Chat.fbSlots();
+      if (fbs.length) {   /* Firebase: every open tab keeps a small record under chatpresence/<tab id>; records older than a few heartbeats are ignored */
+        const roots = Chat.fbRoots(); let done = false;
+        for (const i of fbs) {
+          try {
+            await fetchT(roots[i] + '/chatpresence/' + this.id + '.json', { method: 'PUT', body: JSON.stringify({ t: now(), d: this.dev, u: mine || '' }) }, 8000);
+            const all = await (await fetchT(roots[i] + '/chatpresence.json', { cache: 'no-store' }, 8000)).json() || {}; let stale = 0;
+            Object.keys(all).forEach(id => { const v = all[id]; if (!/^[0-9a-f]{12}$/.test(id) || !isObj(v) || !Number.isFinite(v.t)) return; if (now() - v.t > 600000 && stale++ < 5) fetchT(roots[i] + '/chatpresence/' + id + '.json', { method: 'DELETE' }, 8000).catch(() => {}); if (id === this.id || now() - v.t > this.ms * 2.5) return; tabs.set(id, { d: /^[0-9a-f]{12}$/.test(v.d || '') ? v.d : id, u: typeof v.u === 'string' && /^([A-Za-z0-9_]{1,24}|STAFF)$/.test(v.u) ? v.u : undefined }); });
+            done = true; break;
+          } catch (e) {}
+        }
+        if (!done) throw new Error('presence');
+      } else {
+        const m0 = me(); await fetchT(this.base, { method: 'POST', body: JSON.stringify({ p: this.id, d: this.dev, u: m0 ? (m0.staff ? 'STAFF' : m0.name) : undefined }) }, 8000);
+        const r = await fetchT(this.base + '/json?poll=1&since=' + Math.ceil(this.ms * 2.5 / 1000) + 's', { cache: 'no-store' }, 8000);
+        (await r.text()).split('\n').forEach(l => { try { const d = JSON.parse(l); if (d.event !== 'message') return; const m = JSON.parse(d.message); if (!m || !/^[0-9a-f]{12}$/.test(m.p) || m.p === this.id) return;
+          if (m.bye) tabs.delete(m.p); else tabs.set(m.p, { d: /^[0-9a-f]{12}$/.test(m.d || '') ? m.d : m.p, u: typeof m.u === 'string' && /^([A-Za-z0-9_]{1,24}|STAFF)$/.test(m.u) ? m.u : undefined }); } catch (e) {} });
+      }
       /* one person = one logged-in username, or one guest device (tabs and restarts never count twice) */
       const devUser = new Map(); tabs.forEach(t => { if (t.u) devUser.set(t.d, t.u); });
       const people = new Map(); tabs.forEach(t => { const u = t.u || devUser.get(t.d); people.set(u ? 'u:' + u : 'd:' + t.d, u); });
@@ -2042,8 +2127,9 @@ const Presence = {
     /* remove the record left by this device's previous page (restart, crash, killed browser) */
     try { const last = Store.get('gg.lastTab', null); if (/^[0-9a-f]{12}$/.test(last || '') && last !== this.id && navigator.onLine) fetchT(this.base, { method: 'POST', body: JSON.stringify({ p: last, bye: 1 }) }, 8000).catch(() => {}); Store.set('gg.lastTab', this.id); } catch (e) {}
     setTimeout(() => this.tick(), 1500); setInterval(() => this.tick(), this.ms);
+    try { const last = Store.get('gg.lastTab', null); if (/^[0-9a-f]{12}$/.test(last || '') && last !== this.id) setTimeout(() => { Chat.fbSlots().forEach(i => fetchT(Chat.fbRoots()[i] + '/chatpresence/' + last + '.json', { method: 'DELETE' }, 8000).catch(() => {})); }, 4000); } catch (e) {}
     document.addEventListener('visibilitychange', () => { if (!document.hidden) this.tick(); });
-    addEventListener('pagehide', () => { try { if (Chat.online) navigator.sendBeacon(this.base, JSON.stringify({ p: this.id, bye: 1 })); } catch (e) {} });
+    addEventListener('pagehide', () => { try { if (!Chat.online) return; const fbs = Chat.fbSlots(); if (fbs.length) fbs.forEach(i => fetch(Chat.fbRoots()[i] + '/chatpresence/' + this.id + '.json', { method: 'DELETE', keepalive: true }).catch(() => {})); else navigator.sendBeacon(this.base, JSON.stringify({ p: this.id, bye: 1 })); } catch (e) {} });
   }
 };
 
@@ -2334,6 +2420,7 @@ function wireSocial() {
   document.addEventListener('mousedown', e => { if (!e.target.closest('#srchForm')) $('#srRes').classList.add('hide'); });
   $('#profBtn').addEventListener('click', () => { const m = me(); if (!m) { toast('LOG IN TO OPEN YOUR PROFILE', 'bad'); return openLogin(); } openProfile(m.key); });
   $('#delBtn').addEventListener('click', openDeleteAccounts);
+  $('#policyBtn').addEventListener('click', () => openPolicy(false));
 }
 
 /* ---- file sharing: type + content checks, plus a malware scan for programs and scripts ---- */
@@ -2500,6 +2587,7 @@ async function probeMod(m) {
     return timed('https://api.giphy.com/v1/gifs/trending?limit=1&rating=g&api_key=' + encodeURIComponent(key), { cache: 'no-store' }, 1);
   }
   if (m.kind === 'chat') {
+    const fr = Chat.fbRoots()[m.i]; if (fr && Chat.fbOk[m.i]) return timed(fr + '/chat.json?limitToLast=1&orderBy=%22%24key%22', { cache: 'no-store' });
     const t = [CFG.CHAT.TOPIC, CFG.CHAT.TOPIC2][m.i]; if (!t) return { na: 'NOT CONFIGURED' };
     return timed(CFG.CHAT.URL + '/' + t + '/json?poll=1&since=1s', { cache: 'no-store' });
   }
@@ -2530,7 +2618,7 @@ function openSystemStatus() {
       const bar = h('div', { class: 'hbar', role: 'img', 'aria-label': md.name + ': ' + label }, h('i', { style: 'width:' + (hasData && !(r && r.na && !off) ? sc : 0) + '%;background:' + (off || !r || r.na ? '#3a4668' : healthColor(sc)) + ';color:' + (off || !r || r.na ? '#3a4668' : healthColor(sc)) }));
       const btn = off ? h('button', { class: 'btn lime sm', 'data-mod': md.id, onclick: () => { setMods([md.id], false); draw(); probeAll([md]); } }, '▲ STARTUP MODULE')
         : h('button', { class: 'btn amb sm', 'data-mod': md.id, onclick: () => { setMods([md.id], true); draw(); } }, '▼ SHUTDOWN MODULE');
-      return h('div', { class: 'hrow', 'data-id': md.id }, h('div', { class: 'hname' }, h('b', {}, md.name), h('small', {}, md.sub)), h('div', { class: 'hmid' }, bar, h('span', { class: 'hlab' }, label)), btn);
+      return h('div', { class: 'hrow', 'data-id': md.id }, h('div', { class: 'hname' }, h('b', {}, md.name), h('small', {}, md.kind === 'chat' ? (Chat.fbOk[md.i] ? 'Firebase chat' : 'ntfy.sh (needs Firebase rules)') : md.sub)), h('div', { class: 'hmid' }, bar, h('span', { class: 'hlab' }, label)), btn);
     });
     m.setBody([h('div', { class: 'hhead' }, h('p', { class: 'hint', style: 'margin:0;flex:1' }, 'FULL BAR = GREEN = NO SLOWDOWNS // HALF = YELLOW = SOME SLOWDOWNS // ALMOST EMPTY = RED = NEARLY DEAD // EMPTY = DEAD. A shut-down backup is still used by the others as usual.'), bigBtn()), h('div', { class: 'hlist' }, rows), h('p', { class: 'hint' }, 'Checks refresh every 30 seconds. GIPHY is only checked when this window opens or you start it (GIPHY allows 100 requests an hour).')]);
   };

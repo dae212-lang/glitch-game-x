@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "glitchgamez":     { ".read": true, ".write": true, ".validate": "newData.hasChild('v')" },
+    "glitchgamez-rev": { ".read": true, ".write": true, ".validate": "newData.isNumber()" },
+    "chat": {
+      ".read": true,
+      "$id": {
+        ".write": true,
+        ".validate": "newData.hasChildren(['u','m','t']) && newData.child('u').isString() && newData.child('u').val().length <= 24 && newData.child('m').isString() && newData.child('m').val().length <= 400 && newData.child('t').isNumber()"
+      }
+    },
+    "chatpresence": {
+      ".read": true,
+      "$id": { ".write": true, ".validate": "newData.hasChildren(['t']) && newData.child('t').isNumber()" }
+    }
+  }
+}

@@ -255,3 +255,5 @@ body.navbig .nav .chip{font-size:14px;padding:6px 12px}body.navbig .nav .who{fon
 .nav .who{display:inline-block;min-width:62px;text-align:center;white-space:nowrap}
 @media(max-width:760px){.nav .chipw{flex-direction:column;width:104px}}
 .cm .mst{display:block;margin-top:2px;font:12px var(--mono);letter-spacing:.06em}.cm .mst.send{color:#ffd400}.cm .mst.ok{color:#1aff6e}.cm .mst.bad{color:var(--red)}
+.linkbtn{background:none;border:0;color:var(--ac);font:inherit;cursor:pointer;text-decoration:underline;padding:0;margin-right:12px}.linkbtn:hover{color:#fff}
+@media(max-width:480px){.modal .tog{flex-wrap:wrap;gap:8px}.modal .tog .row{flex-wrap:wrap!important;flex:1 1 100%!important}.modal .tog .btn{max-width:100%}}
