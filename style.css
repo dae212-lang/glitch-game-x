@@ -254,3 +254,4 @@ body.navbig .nav .chip{font-size:14px;padding:6px 12px}body.navbig .nav .who{fon
 .nav .chipw{width:104px;flex:none;box-sizing:border-box}.nav #syncChip{width:100%;box-sizing:border-box;justify-content:center;white-space:nowrap;overflow:hidden}.nav .chipw small{display:block;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;min-height:12px}.nav .chipw small:empty{display:block;visibility:hidden}
 .nav .who{display:inline-block;min-width:62px;text-align:center;white-space:nowrap}
 @media(max-width:760px){.nav .chipw{flex-direction:column;width:104px}}
+.cm .mst{display:block;margin-top:2px;font:12px var(--mono);letter-spacing:.06em}.cm .mst.send{color:#ffd400}.cm .mst.ok{color:#1aff6e}.cm .mst.bad{color:var(--red)}
