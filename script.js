@@ -1,6 +1,6 @@
 /* Glitch Game X app */
 (()=>{'use strict';
-const CFG={"SEALED":{"iv":"3JnHtKhV1G5cvRi5p1Qn2A==","ct":"BuaMrycxL6OzPDuhpN7K171DHwFeXbbmWOEDaFCFnv1o/aqQhSnv38mByX3UcMOvtCVK++FHfPE=","mac":"B5Jl4uOilfJ1epzd6WbEEilxjH60MdbA4mtJteBTrdM="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"CddMMoiMhIn4cogmz2iszA==","ct":"es418k56epsA+3kqvejyG0Spl8T4Y+KFkASW/HhMzOG+Stl4CU53BoPx1Ure9MCzzQkrj2ur6XM=","mac":"h8FlJUULCWHW3jAoJB2OXJJUkJbIIBnPsu2n+iEfivk="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":{"iv":"yyEZOfephWvXUMAxp2hG9g==","ct":"FVkIhMBRPJoFJ5DIc4tS1+75KdxUyUplOC3mP8O/nM4=","mac":"BKXa0URyOWCQzp0XBkY54OmkgNtyYbPtFOIQtFwUEes="},"BK":[{"iv":"ThHWPyz/OCys65fZPRmOgg==","ct":"vkdq0iuSeY9JMIGF3c/w+a2HTTqth87bvj4Vqz9FcVdNbZVxKgmLLDmhBheCJ5nw3paQcK9uiz4=","mac":"/mFPQqTVO9jX1Ng2Wu2n9ZLdEOwqPUrtCTGCxLEDevU="},{"iv":"OHUMEN5vW1LFiaNPMdIa9g==","ct":"TvCDGtNd2ceGrUdY0p2C0+nlmCwEDhC90qFdrqi+45fFloA2EKKNjzTZkKJWRub7C2l3xx+kFPE=","mac":"QRzU0EUmtBRREnSmeWCuMG4ryj0fPDInqVb6+pAUxQY="},{"iv":"oDaYOBAX5IIHxx6D4B5MZw==","ct":"mSXQIpTKEX4LaTdeoWrhQ1rfjCqhRQWO5FGua8f1mfqcCZCp+b/AATtnmuS3nKOgXY+qFcfIH0k=","mac":"e2ct3+076Ow+wjKbTEBtKfaVV1XwKpyd+WdbMoUgy78="},{"iv":"0R+e9w3XfvxUfFo8cvZzKw==","ct":"cZjBDDrE1Y6vRF3JceXJlgQp671K88kIW/jqorIzW8PrK/7j06sM/ujli2Xjeo1EfAoRjeYxIgo=","mac":"1H7C8ZlyxtxHED+RNA756Br9CooIiJwgFw8LkY3GggI="}],"SCANK":{"iv":"KGzCfjouLeYwS1dlhHOwQQ==","ct":"IFrO6dsI5nHNURUT6LmpdtiRdBo/c6ZKo1p+ooXwYYFU2akYVYUVZIWtuCBRihKsgABXdGo6swI=","mac":"98BCRjceSkt0AeUAkL7eRQGfiKaVXcxCSkiMDex2c80="},"RECK":{"iv":"gTVicwg6fE2XOfNyP5avFw==","ct":"RyMl6iKh7T/ulKvVKiWppQtyF+GvJNjwcGADTP0bNFoSB+IiVQuckqKWdzRLl6KtN96kVU79v6k=","mac":"3iIx0nyCCZyWmttPnSM7wBe0E+qQKql2SngNcV2poKY="}};
+const CFG={"SEALED":{"iv":"SUmZipXQhwI0ApynayGfWg==","ct":"pp5FVli82E1QJsXGEHnHb3yClne9OzGSCxZm+aCOzfi6nU6nKAPFC38R7a0LjqCSgc0aDwJMNl0=","mac":"SB2PvYWwg/thr8xq492/FMAI1WhsqPrBFnCispiS2rc="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"ZY41+3ysEP1Ni4PzVPKPOQ==","ct":"1PBkWBOk3MO45S4qc3cnluqxGLy/ZT/NzOoA1jdrzKLowovxcGPmN8TPcyNwpvxZB1xcjHQoTiA=","mac":"LVcLRN8Ih9xacNNeaE/+8oxlv6LFeorazK4vtVEl/lc="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":{"iv":"a0d7j+ow7ibcgnGvuD0i0g==","ct":"6DmAcWZSYq/Qr/ZEARRmcXRzAplsNgFoXCFSg7x25mM=","mac":"Mgvky5heYsGoxm1GuJ+dqrNxQRCxpOAJSM57rrU4FLs="},"BK":[{"iv":"I1YUrmOJYRcAXcIS7z0nQw==","ct":"jrOjg+NjClifjNwnrUrmrwpQvUC6duDLuzimKpPV1Iq5Sg7B9upUgKhQNT3b079rPCWDftc97Ao=","mac":"GpxxyzkHCqXDhyqn3dapw6oRIasK0bXKJdIrt6Y3fi4="},{"iv":"mfInPmjpJyR9mYiiSmNcAQ==","ct":"BskCakOvD7gRdy+JtEgQERVXbZatJeiYHbfjXmVuskrNQjLU//xLem8zj+5m6lb/ax8duL6/iqs=","mac":"CHRNA2D8JiJ8Y467la8c+aQb3koxS3D7obqOpkoFo30="},{"iv":"YBzlv0WyDofFjjyjYtxusw==","ct":"wybbdr2X2VmicEc+d1svDyY4Wby5VJ6n5h2U2s755r52L/RRJc5nhHObBQS3qHu9KKDGOs0g4v0=","mac":"UbD3evmFi/W82mwtKTRZAHKA+C7yau255gNMyOZc010="},{"iv":"MLZCl1cyQ8ZKzXC3+WTwEQ==","ct":"OuA/0tjoKdGKKUgcWuoBQeoA34Z7ur07EDGyh13Bm8tXKCDs4z0L/MvBopWdeRi7q3u1GGU4iN8=","mac":"lmQAXtGDMUnvoBA9T6ZKL0s//V07SQ7mSRQ5A2EOwc8="}],"SCANK":{"iv":"LlNIXIis6AvolCgbRL2TSw==","ct":"LFA2Ld39PsFa4WsPwKLaDDJFODZOeatcXrG04MqMjzaYiGyMm+ogU5EkW4BFRbdbk8I2oItZ9Ws=","mac":"7b4Y8AjmiIjC8VMf+OW2PYUcV4EIygnNfPWN8a4pews="},"RECK":{"iv":"LkLe9KUGMkkWvrpkLuQIkw==","ct":"zWoIBh2chwqRIwaKgceXmvSKMLJLlQgU8Kx6USopSbY8EBS0Hr0/HAyPMa+hIsCq+UhDGd0JfYs=","mac":"dM3u8ntcawPB42fvrlSiKuw9SPp9h7YQgmwQSOihIVQ="}};
 /* ============ CORE: utils, storage, crypto ============ */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -681,14 +681,15 @@ function openSettings() {
     ];
     out.push(h('div', { class: 'sec-t' }, '// AGE FILTER'), h('div', { class: 'tog' }, h('span', {}, 'Your age: ' + (AGE == null ? 'not set' : AGE) + ' (stored only on this device)'), h('button', { class: 'btn sm', onclick: () => { m.close(); askAge(true); } }, 'Change')));
     out.push(h('div', { class: 'sec-t' }, '// AI ENGINE'));
-    out.push(h('div', { class: 'tog' }, h('span', {}, 'Groq key: ' + (aiOn() ? 'SEALED & SYNCED' : 'NOT SET') + (aiOn() && DB.ai.fp && (DB.ai.fp === CFG.AI_FP || DB.ai.fp === CFG.AI_FP2) ? ' (matches fingerprint)' : '')), aiOn() ? h('span', { class: 'chip ok' }, h('i'), 'ONLINE') : h('span', { class: 'chip bad' }, h('i'), 'OFFLINE')));
+    out.push(h('div', { class: 'tog' }, h('span', {}, 'Groq key: ' + (localKeyOn() ? 'SAVED ON THIS DEVICE ONLY' : 'none on this device') + (localKeyOn() ? '' : '')), localKeyOn() ? h('button', { class: 'btn red sm', onclick: () => { AI.removeLocal(); toast('KEY REMOVED FROM THIS DEVICE', 'ok'); draw(); } }, 'Remove from this device') : h('span', { class: 'chip bad' }, h('i'), 'NOT SET')));
+    out.push(h('div', { class: 'tog' }, h('span', {}, 'Shared site key: ' + (DB.ai && !DB.ai.del ? 'SEALED & SYNCED (all devices)' : 'NOT SET') + (DB.ai && !DB.ai.del && DB.ai.fp && (DB.ai.fp === CFG.AI_FP || DB.ai.fp === CFG.AI_FP2) ? ' (matches fingerprint)' : '')), DB.ai && !DB.ai.del ? h('span', { class: 'chip ok' }, h('i'), 'ONLINE') : h('span', { class: 'chip bad' }, h('i'), 'OFFLINE')));
     {
-      const k = field('Groq API key (gsk_...)', { plain: true, name: 'groq', max: 200, ph: 'Paste your gsk_ key here' }), msg = h('div', { class: 'hint' });
+      const k = field('Groq API key (gsk_...) - saved on this device only', { plain: true, name: 'groq', max: 200, ph: 'Paste your gsk_ key here' }), msg = h('div', { class: 'hint' });
       out.push(k.wrap, msg, h('div', { class: 'row' },
-        h('button', { class: 'btn lime sm', onclick: async e => { e.target.disabled = true; try { const r = await AI.install(k.input.value, t => { msg.textContent = t; msg.className = 'hint'; }); toast(r, 'ok'); k.input.value = ''; draw(); } catch (x) { setHint(msg, '✗ ' + x.message, 'bad'); } e.target.disabled = false; } }, 'Verify, seal & sync'),
+        h('button', { class: 'btn lime sm', onclick: async e => { e.target.disabled = true; try { const r = await AI.install(k.input.value, t => { msg.textContent = t; msg.className = 'hint'; }, true); toast(r, 'ok'); k.input.value = ''; draw(); } catch (x) { setHint(msg, '✗ ' + x.message, 'bad'); } e.target.disabled = false; } }, 'Verify & save on this device'),
         h('button', { class: 'btn sm', onclick: async e => { e.target.disabled = true; try { toast(await AI.useEmbedded(t => { msg.textContent = t; msg.className = 'hint'; }), 'ok'); draw(); } catch (x) { setHint(msg, '✗ ' + x.message, 'bad'); } e.target.disabled = false; } }, 'Use embedded key'),
         h('button', { class: 'btn amb sm', onclick: async e => { e.target.disabled = true; try { toast(await AI.useEmbedded(t => { msg.textContent = t; msg.className = 'hint'; }, 2), 'ok'); draw(); } catch (x) { setHint(msg, '✗ ' + x.message, 'bad'); } e.target.disabled = false; } }, 'Use backup embedded api key'),
-        aiOn() ? h('button', { class: 'btn red sm', onclick: () => { DB.ai = { t: now(), del: 1, ct: 'x' }; AI.clear(); commit(); draw(); } }, 'Remove key') : null));
+        DB.ai && !DB.ai.del ? h('button', { class: 'btn red sm', onclick: () => { DB.ai = { t: now(), del: 1, ct: 'x' }; AI.clear(); commit(); draw(); } }, 'Remove shared key') : null));
       if (isStaff()) {
       const cl = field('Cloud database URL(s) override (advanced; main, backup)', { name: 'cloud', max: 300, ph: CFG.CLOUD ? 'default: built-in shared database' : 'https://...' });
       cl.input.value = Store.get('gg.cloud', '');
@@ -950,7 +951,8 @@ function wireChrome() {
 const GROQ = 'https://api.groq.com/openai/v1';
 const PREFERRED = ['llama-3.3-70b-versatile', 'openai/gpt-oss-120b', 'qwen/qwen3-32b', 'llama-3.1-70b-versatile', 'meta-llama/llama-4-maverick-17b-128e-instruct', 'llama-3.1-8b-instant', 'openai/gpt-oss-20b'];
 const aiErr = (kind, msg) => Object.assign(new Error(msg), { kind });
-const aiOn = () => !!(DB.ai && !DB.ai.del);
+const localKeyOn = () => !!Store.get('gg.localkey', null);   /* a key pasted on THIS device: never uploaded */
+const aiOn = () => !!(localKeyOn() || (DB.ai && !DB.ai.del));
 const GEN_SYS = `You are GLITCH-BOT, the cheerful AI game-coder inside Glitch Game X, a cyberpunk game site. You are an expert web game developer: your games always run on the first try.
 
 REPLY FORMAT
@@ -1063,13 +1065,18 @@ const Verify = {
 };
 const AI = {
   _k: null, _kt: 0,
-  clear() { this._k = null; this._kt = 0; },
-  async key() {
-    if (!aiOn()) return null;
+  clear() { this._k = null; this._kt = 0; this._lk = null; },
+  /* the key pasted on this device (stored only in this browser) */
+  async localKey() { if (!localKeyOn()) return null; if (this._lk) return this._lk; try { this._lk = await unseal(Store.get('gg.localkey')); } catch (e) { this._lk = null; } return this._lk; },
+  /* the shared key (set by "Use embedded key"); every device reads it from the database */
+  async sharedKey() {
+    if (!(DB.ai && !DB.ai.del)) return null;
     if (this._k && this._kt === DB.ai.t) return this._k;
     this._k = await unseal(DB.ai); this._kt = DB.ai.t; return this._k;
   },
-  async install(raw, say) {
+  async key() { return (await this.localKey()) || (await this.sharedKey()); },
+  /* local = true: a PASTED key, saved on this device only. local = false: the site's own embedded key, saved for all devices. */
+  async install(raw, say, local) {
     const k = String(raw || '').trim();
     if (!k) throw new Error('Paste the Groq API key first.');
     if (!/^gsk_/.test(k)) throw new Error('That does not look like a Groq key (they start with gsk_).');
@@ -1078,9 +1085,11 @@ const AI = {
     if (r.status === 401 || r.status === 403) throw new Error('Groq rejected this key (HTTP ' + r.status + ').');
     if (!r.ok) throw new Error('Groq answered HTTP ' + r.status + '.');
     const fp = await sha256Hex(k);
+    if (local) { Store.set('gg.localkey', await seal(k)); this._lk = k; CHANGE(); return '✓ Key works. Saved on THIS device only (not shared).'; }
     DB.ai = Object.assign({ t: now(), fp }, await seal(k)); this._k = k; this._kt = DB.ai.t; commit();
     return fp === CFG.AI_FP || fp === CFG.AI_FP2 ? '✓ Key works, matches an embedded fingerprint, saved for all devices.' : '✓ Key works and is saved for all devices.';
   },
+  removeLocal() { Store.del('gg.localkey'); this._lk = null; CHANGE(); },
   async useEmbedded(say, which) {
     const sealed = which === 2 ? CFG.SEALED2 : CFG.SEALED;
     if (!sealed) throw new Error('No ' + (which === 2 ? 'backup ' : '') + 'key is embedded in this file yet. Paste a gsk_ key instead.');
@@ -1237,7 +1246,7 @@ function keyPopup() {
       h('div', { class: 'big-msg' }, 'NO API KEY OR EXPIRED!'),
       h('form', { style: 'display:flex;flex-direction:column;gap:12px', novalidate: true, onsubmit: async e => {
         e.preventDefault(); err.textContent = ''; save.disabled = true;
-        try { toast(await AI.install(k.input.value), 'ok'); m.close(true); } catch (x) { err.textContent = '\u2717 ' + x.message; shakeIt(m.el); }
+        try { toast(await AI.install(k.input.value, null, true), 'ok'); m.close(true); } catch (x) { err.textContent = '\u2717 ' + x.message; shakeIt(m.el); }
         save.disabled = false;
       } },
         h('p', { style: 'color:var(--tx);text-align:center;margin:0' }, 'Type your api key here'),
