@@ -1,6 +1,6 @@
 /* Glitch Game X app */
 (()=>{'use strict';
-const CFG={"SEALED":{"iv":"vbLEOGz/8S7tG9eUJAEojA==","ct":"TAyWgtW44LLqzolQa+LaZ0UMc75iRtiImX7JJuyg4CW8UNZQaREINikGFsYMr2/LXjiF4lP5u0w=","mac":"r8wrHGvwQtLWOVH+uPMi0kotea/U5VbZBD1+oDopR6A="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"SXLxj5H9EsiOBwfZQIUftA==","ct":"n5K3YiLSp+QSIPzLzXBLsL1vYLHa4Cmqhfm3FeKNChe5dduUspBX8ITZqTmRxNVc1lw2sCEpYWM=","mac":"8gjQh9Q2F1b7W5S2n0iNv53zBmjzf8WYalnUiRqT4Tk="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":{"iv":"by7MOd822XBry41PK/aqQw==","ct":"W/IvwCEL8gpROaPfB1k/PsBva9/Gb1TpYMu3fp1PLxA=","mac":"HjbqPH7yWKYGB3x2kx8Op9ajp/xyY/n6jhBQvGeDpbE="},"BK":[{"iv":"6S+bfixOfKpTX8MMkj7aWw==","ct":"ycYVF5IJ/osCNIIWORk4vFpzuXyXDLD77+eR4RuSzc5HJfzagdde6TheKJHLM1yhfy/H7oqMMm4=","mac":"AGh91XnDDtpOOTWQvec9octIvCaLCWlEdHeHiAojsJQ="},{"iv":"Rndtcdl3WkV7BmQp4BtqKQ==","ct":"nsZZ6BLx6jmdbBocam5XZ3uspZVOWI0rp011QDtdT4o4p/4hjrae5p/HDNRWyHb+2J8vBR3xVXw=","mac":"oZS9PhPPmqukogV4MchTKqjTVKMVC/IiZshLAfxP78E="},{"iv":"kxzikiqo7uoi/E3NVz8fdA==","ct":"hKbGneib+ja4u7JAWTusEngUHgBh3mw//o+M/cJgPJ+zo271YDHlSXddt92otPGXDc0nHkWpS2E=","mac":"mlOfuHsvzaPL/JcDnzeO1uWGqRHPL5MuLv9rVHpWvJ4="},{"iv":"2dnqWf4yLWCDxu77Zmwblw==","ct":"2fUVaS8ft7t4wUYOOcprW7lbcYgsYrUkE+4jaxTdi8p9IUOio5HJIaAx4KQx5Fvac7tIdb2FtrM=","mac":"3+3VGm/e26F5rZqDvXB/YvBnjIbq7gpNRybr0g5fAwA="}],"SCANK":{"iv":"XZO9C6BaRAXU2fag1SrnRA==","ct":"XwmwKmCiCmNx8vv9sPGd3my+Du5lZrGytBGJ4/023ONIIzb9URCNrM0LOiQC1jhqfxF8A2sHtmY=","mac":"k4xhQdbawXpr71qLkKN4TlJsmloNNSzAsP79rMGcZTc="},"RECK":{"iv":"uPSwFBdvwwJfrUkXBBzRHw==","ct":"QkHKUegNyZ5Vr52Mj1ZPSwBc/usOu3j7EQj/7iMELDuWHahZZC71c3vMWke3EOt9T1KPwPIY5TM=","mac":"bCXL1gb8+HGSdRaFT/KZUvCDl1Hnwj85j2WkvV9t9Nk="}};
+const CFG={"SEALED":{"iv":"wLW8MdQy7s50rjZ4kKpbsg==","ct":"1IPMm/bt8J2A8AutyWthGkqY/HvwBCQmDeIBflPrGYds+0I8slIaFIhjfUFs9Lu6A+Ic18UB46k=","mac":"US2CMJ/H1Nxp0BA4m0Hea4ETmCb8IR3o0zc3p0F2X2I="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"DHuX6ehY6y0VPhTDfc97+A==","ct":"U9fw+AjsRCbaEpfIlKY/iJnmx8rGR90+69jPsDbYlSJMoHvIDLcfQmBYyO8myGJUE/y+BDW6N/Y=","mac":"oIGERzwV0d6z8zxLz2wsKuMSPoVkONZ/7zk+1b/pL+M="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":{"iv":"ANB//dTnmwqArsAeBTIrpQ==","ct":"ghwiD8qKvojerwZWmWwfrv9k8DY4ozsd8heXNI/jVCQ=","mac":"3/JUIPUwJHvglUoNS1Xuy2qbZmQz4NFTrlBJUlD77d4="},"BK":[{"iv":"rQKFAOU45BCSDNxeiiaPEg==","ct":"dbKEhuLq0vHKWT4RPUNQY+JHzZ4nxL6Qyne0GYNtG0COwlVsTxS85fhCtZW2skGz0ZI4KzyUoZE=","mac":"pbtguWw6ybg8BoCCEy1EnaatosWCAwBrPd4S4S6Foso="},{"iv":"6Oznq6/5q8FNKMNiU9EwOw==","ct":"ZvprnV576s9VD/TZPO2Kr/avhwiDiDvvDonL8zoSzU2KHTK6fGo5ClxiU9gYGnvRnptFQUcSjVQ=","mac":"y1gVKW55blSyx1mPLwzB4Bhj/psfyPpHx06t0s4PlEg="},{"iv":"5NMrOTygqAaud2EyOYVW1g==","ct":"sz0C5EbU63fzWU769fxP1Ox6eldwH7Mmz16mvCy0Wu8djp+XbVrcg2O/vOCkYB2bAJx0gl3kfiU=","mac":"pEt9kQY+rapchQSArscTO2OT9CnvuXK0cHPZppTUh0o="},{"iv":"xCmzmBeYRpEj2kXgh5hFhg==","ct":"bSCS0iE0OdP847Umk1p1ukg/BprX+Rvu4BFjPTXJ+5iApNRMbcFxOP40voeBiqpzJssfCsPNBpE=","mac":"SzS3owyH76m8NOWN9P2O+RsU9qA86Q6QZvEhJJWansg="}],"SCANK":{"iv":"cZFxupbWStzQnIf6FW+Ilw==","ct":"WN9RnWAkzpB9LOgkgXgUYY2XeTAARfmnWZ1MFdfkK5bVu/qPJz1ii6Otmc6pLXtaUz7b0vr9ss0=","mac":"SVTwElPgl3pX8njijWwDo3MkgryfEQW/LnLAo+bLa1Q="},"RECK":{"iv":"FhuTEwR3XT6qRWUYJ8DHZA==","ct":"opjeDTrQnzARuphjkEDVh9CNxx1pGkIAyhW7Wt/r4PHDnmhMEtLc506t7eVhwSMicr0HBHfghs0=","mac":"1jcUqPh6MFHf68enTwH0xCRAbKitvck4arIBPWHVmOU="}};
 /* ============ CORE: utils, storage, crypto ============ */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -501,12 +501,14 @@ function removeGame(gid) {
 function addGame(g) { DB.games[g.id] = g; commit(); }
 
 /* ============ UI ============ */
-const SET = Object.assign({ accent: '#00f0ff', fx: true, glitch: true, rain: true, sound: false, intro: true }, Store.get('gg.settings', {}));
+const SET = Object.assign({ accent: '#00f0ff', fx: true, glitch: true, rain: true, sound: false, intro: true, navbig: false }, Store.get('gg.settings', {}));
 function applySettings() {
   document.documentElement.style.setProperty('--ac', SET.accent);
     document.body.classList.toggle('noglitch', !SET.glitch);
   Rain.toggle(SET.rain);
+  document.body.classList.toggle('navbig', !!SET.navbig);
   Store.set('gg.settings', SET);
+  if (typeof fitUI === 'function' && document.querySelector('.nav')) fitUI(true);
 }
 let AC;
 function beep(f = 660, d = .05, type = 'square', v = .03) {
@@ -670,7 +672,7 @@ function openSettings() {
     const out = [
       h('div', { class: 'sec-t' }, '// DISPLAY'),
       h('div', { class: 'sw' }, cols.map(c => h('button', { class: c === SET.accent ? 'on' : '', style: 'background:' + c + ';color:' + c, 'aria-label': 'Accent ' + c, onclick: () => { SET.accent = c; applySettings(); draw(); } }))),
-      tog('Glitch animations', 'glitch'), tog('Digital rain background', 'rain'), tog('Intro animation', 'intro'), tog('Sound FX', 'sound'),
+      tog('Larger top bar (bigger buttons and text)', 'navbig'), tog('Glitch animations', 'glitch'), tog('Digital rain background', 'rain'), tog('Intro animation', 'intro'), tog('Sound FX', 'sound'),
       h('div', { class: 'sec-t' }, '// CLOUD SYNC'),
       h('div', { class: 'tog' }, h('span', { id: 'setSync' }, Sync.url() ? 'Status: ' + ({ ok: 'SYNCED ' + (Sync.last ? timeAgo(Sync.last) : ''), bad: 'ERROR (' + Sync.err + ')', busy: 'SYNCING...' }[Sync.st] || 'IDLE') : 'Not connected: this device only'), h('button', { class: 'btn sm', onclick: async () => { await Sync.run(); draw(); } }, 'Sync now')),
       h('div', { class: 'sec-t' }, '// ACCOUNT'),
@@ -850,6 +852,7 @@ const UI = {
     $('#loginBtn').textContent = m && !m.staff ? 'Log out' : 'Login';
     $('#staffBtn').textContent = m && m.staff ? 'Staff Out' : 'Staff Sign In';
     $('#sysBtn').classList.toggle('hide', !(m && m.staff)); refreshStat();
+    const nk = m ? (m.staff ? 's' : 'u') : 'g'; if (nk !== UI._nk) { UI._nk = nk; setTimeout(() => fitUI(true), 30); }
   },
   refresh() { UI.nav(); renderGames(); rateUnrated(); if (typeof SYSDRAW !== 'undefined' && SYSDRAW) SYSDRAW();
   if (typeof Chat !== 'undefined') { Chat.applySys(); if (Chat.win && Chat.win.refresh) Chat.win.refresh(); } }
@@ -873,9 +876,13 @@ function placeMenu() {
   if (r.right > innerWidth - 8) sh = innerWidth - 8 - r.right;
   mn.style.left = sh + 'px'; const r2 = mn.getBoundingClientRect(); if (r2.left < 8) mn.style.left = (sh + 8 - r2.left) + 'px';
 }
-function fitUI() {
-  document.body.classList.remove('compact');
-  const nav = $('.nav'), over = () => document.documentElement.scrollWidth > innerWidth + 1 || nav.scrollWidth > nav.clientWidth + 1 || nav.scrollHeight > 150;
+/* the top bar only switches to its small "compact" form when the window WIDTH changes (or you sign in/out), never because the page scrolled:
+   phones fire resize events while scrolling (the address bar slides away), and re-measuring then made the bar jump between sizes. */
+function fitUI(force) {
+  if (!force && innerWidth === fitUI.w) return; fitUI.w = innerWidth;
+  const nav = $('.nav'); document.body.classList.remove('compact');
+  if (SET.navbig) { placeMenu(); return; }          /* "Larger top bar" is on: always the normal (bigger) size */
+  const over = () => document.documentElement.scrollWidth > innerWidth + 1 || nav.scrollWidth > nav.clientWidth + 1 || nav.scrollHeight > 150;
   if (over()) document.body.classList.add('compact');
   placeMenu();
 }
