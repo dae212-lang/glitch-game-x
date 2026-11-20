@@ -1,6 +1,6 @@
 /* Glitch Game X app */
 (()=>{'use strict';
-const CFG={"SEALED":{"iv":"/f1LjAkpp37gCGWNwFYzLg==","ct":"xV5L8sIwyo7jyoyubRz3+kQp8JH41cboAQLl9JWiNLUnn0VugbljtDs9t6tLtcqfgd5pmmQ6le8=","mac":"fLRmDcYczHM9tDRC5UmTdAVe9l8TbaFdRqOyW6H0Glk="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"EtTI4DB4MjJwT38kRS9AEA==","ct":"zUadmFjfWZdP2BFEntUSywQ3dP9qi5el0tQojsE52YtBFR38nN22qU5Rua/h4/etnDUtEQGXZyc=","mac":"rKm0lyY0ZzL+Gc4Q56msRVGQV/c8PZrfnK/JLPBZIHE="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":null,"BK":[{"iv":"m5AJJUBjBLwiyMuYBm95Vg==","ct":"+LO1j+264oUKpDIi7rFKTVkO8uQ5QRt4RVFO/H4ah9FFHu5BhXrVG/K6nonwK8vvjzQ9AJYAyYc=","mac":"a1tbuZxeRrMdEfRwjc1VHiWarEBrMZwrf+et7aXSoRM="},{"iv":"LBF+YlZUzlKgnJGgD+XOWw==","ct":"P8ZNIz/q0JDo062stx8buyEKpLqKn6RGQ1fvULp5+z0wOll1gLQ/uihHrHeKhmfb95HdHvD2tJs=","mac":"Qp4CrtzM4zd4kGfxgj8sjnw1k71WOVGx9RGZNDUWZ9w="},{"iv":"+1BP2BcZPnHEkGEVeyqxyw==","ct":"2l25fhZBL1ehg/894bTfURr8vdRWrzqw2jXl4R1zPSJFShQ3WJYlJQj4oQdBK9hFVKdrd5CMkIQ=","mac":"ZpT1CRzpnRqBkx2pcHd8dL2iBTojxBl/H+htSciJMrI="},{"iv":"7pjTDsBl8NBm4i+JAGi1Qw==","ct":"dWQ+fIE3WHkXgEDDr52mPZ+Y66kE+LaB2T2ZjGTQW+h14+S/fBKJjvgjOxK9yh7XqYVOTB32wNA=","mac":"SXDBpMQd987khKT6ylgb+cX3fQjdV90OvJ6ctmelpos="}],"SCANK":{"iv":"VhRz1VCd/nk3ghouw6ErMQ==","ct":"0IUbtlOCDDR18du5/qUskGOkK6u+VW+llBx762/oBJErWcamoLl2gbryw2lNTX6M92IeCDJApWM=","mac":"6pB8/rPa935c1bfkEVoDBP7vsvPIwCXqeX3MArPhQcM="},"RECK":{"iv":"ZhqYaEVlUjsIGg4w59V2zg==","ct":"Sc9GoQK/kgqVTjdAbeU5aoucBc0PXEPc9ismwJmT4+/gzHB3SvFq4XNE5tdKVeB/b85QJ6RchEo=","mac":"Qi7G1dQ/1gRIKwtiUuEqsskT+jJkezEM+qPVYSQuwmo="}};
+const CFG={"SEALED":{"iv":"Wno7aeHNCLMOCj8NOEv9Yw==","ct":"IEZleIPPETBPu1mqboXw3PYvBmegmJjHXbA9wQcyvrbgAYXQ/loviPMVg+iasnv+Se04vBRvlBY=","mac":"lZiO+YARzwoGh3DJhPjHw9G2zyJqDHCAyUxdviUR+Sk="},"CLOUD":"https://glitchgamez-5ca1d-default-rtdb.firebaseio.com/glitchgamez.json","STAFF":[{"id":"c8816e641df0ab56adbda68062b6caf1ad09fd7fcf2fa5cd2f07ece29e4ed24a","s":"8fjDaG76nB40SICHGnKd5w==","i":600000,"iv":"17rHp+5xPNVZzWFMWFuX0g==","ct":"+gMKBK/CUVanc0s2cTNxuZCrmwUfmVnOe2xGUs8/KvI=","mac":"HLz6VJtXpkvo5E/JY4ujhFogdfQoP+RspAzrrzy8FGg="},{"id":"88368481d4bbadcbc3d3a823d9ed9871f86cc992b2ff924200a509864069055e","s":"w5AnoYj+rl/0kvcwy41miw==","i":600000,"iv":"P4Q5FEa3zPG80mIhX3G75g==","ct":"gqppGynmZRs8QJg7GMN6mZrMYJFAAc/qv6GPSQ==","mac":"RQvaJFT4n+Us5suHnJhChOMqnM9VMSKk03o96HBAOeA="},{"id":"e825779511452a75c0f0bd3b58fb050db55f92247478c2d6ee34fb229ee724f8","s":"5oL5mZB/f/KfhoKhTZUSCQ==","i":600000,"iv":"lOABOFmt79vhNpk7RDoBDw==","ct":"olLkfQ0KmzPAskezQ0TsWzJvtSU3bsurTh50XSVi3QIezA==","mac":"EBT8MhPnVqgJsvy7LdJVrudQpSMHsvI8OlRpW2iOIFA="}],"PEPPER":"f8af7d0dae18bf9df4b452ef8306d2337386bf554ac9047f","AI_FP":"7977e456a04c5aa3282ade8b167758f34f8570b8d58018a1e602fd3e4248fc0a","ITER":200000,"CHAT":{"URL":"https://ntfy.sh","TOPIC":"gg-975a0901d4b6f10c0632b538","TOPIC2":"gg-be292557b5ba38f38d65416d"},"SEALED2":{"iv":"kq+/4J3cjUKAqI8F3UFMNg==","ct":"N0+RZn16TGaIRf0A+o4UWN/UFbUNiQibVIGslUcn0IPDZuhBvXKq/RqG7I38GBBlbzScYnXKzfQ=","mac":"ZPfj0QcKUu5z1gEm/srfCxRWLq6pPnAyzX1/A0HSiW8="},"AI_FP2":"089b5a92fe22f134ee6c850be1cfb9d25b4ccba56a0d2a41345777a8f6351b89","CLOUD2":"https://glitchgamez-backup-95a0e-default-rtdb.firebaseio.com/glitchgamez.json","SYNC_MS":30000,"MAXCODE":2000000,"PRESENCE_MS":40000,"MAXTITLE":40,"SEEDS":[],"GIPHY":{"iv":"kya4j3AR5R8AFDE1GxaHyA==","ct":"SnuPWTtWqg2WxUH6QfWvyQu1ZSMaxBfmcDQtWMT+UTk=","mac":"LZ3oorftiYsmkHcBHZzMr4PlPo7Qs9gQv9P88keT1UM="},"BK":[{"iv":"kU9v8CCgA5lKCUiA2iT7yQ==","ct":"5mI2S5LZCTEk9DvSgQJcN/O8A1HgDRCp9IE6WsQQYZXkAtRqPraGNoVfeE6BrojU0ztRdley8JI=","mac":"yljAW66zMFiKqN6++aCQUehyyX2Fhq2hx+JYHKW/HQE="},{"iv":"nWsaHViQcs4rQ+LiEnPTIw==","ct":"tUkf+u/SptpdduRfNC8N3npnX0jrrTJ6pirbXRUHlQnBDpfC8mix6Y/kfBMfnHWT8dDE7QWUjdc=","mac":"i09oIEI8ygBB1J3yxk4K3i3NNcJX6p4A4KKQGrhW3O0="},{"iv":"UxoG3JqcNgv0y5F93B5IgA==","ct":"pZodlEGEJ/ASDOCDFBmtGcrHn6RHAnMX+QSY8thEJbn+qa9y0+tN23Iwu3JuZ+FUvi/8XeNtSLo=","mac":"O5axEutkoSeK0JQD1UAC3mwnjeTirZz55h1XnYkEfxM="},{"iv":"qqhJtAOvyfwEXTOGAqR+Vw==","ct":"giHO7BQWyoWx1PaS3XcLM61oO+eAIz4BIR8ffiyD6upDFhR52GtGgiak6PhTquM4hDmcUhRNhYI=","mac":"z5V/I6DdCKfMcfDGfGc5Cy52Xbs3U4Vl0xAoSQFHjxg="}],"SCANK":{"iv":"gNrNew5WM5+IlnUdxZ6n0g==","ct":"wCngnwQksTBFiio7mVFjYyzxrwCLEWxAvLFeT8o945BC2fQ+uq7yJ8V6TF2HxNu2x7Ock9/TbnU=","mac":"HOMFk6ts0mxp4bgY9NuTaJc4ucalGNNOTxpioZrTa4s="},"RECK":{"iv":"htWvOJs2UsqPIBMrtTNY0Q==","ct":"ANPOWs/DA5RfJfJ3Wnjl3P5dMxepxzL2p8E6pkAo1qA1HINtKP7Uj+LMGvC2d3RTmdc2IcF+MO0=","mac":"etWX61bvxqmPD+1GEhzAl038PzVIC2krK3mkRj3PCAw="}};
 /* ============ CORE: utils, storage, crypto ============ */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -156,7 +156,7 @@ async function unseal(o) {
 
 /* ============ DATA: shared DB, merge, cloud sync, accounts ============ */
 const LANGS = { js: 'JAVASCRIPT', py: 'PYTHON', cpp: 'C++', html: 'HTML', ai: 'AI' };
-const emptyDB = () => ({ v: 1, users: {}, games: {}, votes: {}, gone: {}, bans: {}, profiles: {}, follows: {}, sys: {}, ai: null });
+const emptyDB = () => ({ v: 1, users: {}, games: {}, votes: {}, gone: {}, bans: {}, profiles: {}, follows: {}, sys: {}, plays: {}, comments: {}, ai: null });
 const isObj = o => o && typeof o === 'object' && !Array.isArray(o);
 const isStr = (s, n) => typeof s === 'string' && s.length <= n;
 const okUser = u => isObj(u) && isStr(u.n, 24) && isStr(u.s, 64) && isStr(u.h, 64) && isStr(u.e, 128) && Number.isFinite(u.t) && Number.isFinite(u.i) && (u.m == null || Number.isFinite(u.m)) && (u.rc == null || (isObj(u.rc) && isStr(u.rc.s, 64) && isStr(u.rc.h, 64) && Number.isFinite(u.rc.i)));
@@ -167,10 +167,11 @@ const okFollow = f => isObj(f) && Number.isFinite(f.t) && (f.on === 0 || f.on ==
 const MOD_IDS = ['srv1', 'srv2', 'giphy', 'chat1', 'chat2', 'key0', 'key1', 'key2', 'key3', 'key4', 'key5', 'keyS', 'keyR'];
 const okSys = (k, x) => (MOD_IDS.includes(k) || k === 'emerg') && isObj(x) && (x.off === 0 || x.off === 1) && Number.isFinite(x.t);
 function mergeSys(a, b) { const o = {}; for (const s of [a, b]) for (const k in s) if (okSys(k, s[k]) && (!o[k] || s[k].t > o[k].t)) o[k] = s[k]; return o; }
-const okGame = g => isObj(g) && isStr(g.id, 40) && isStr(g.ti, 80) && LANGS[g.l] && isStr(g.c, CFG.MAXCODE + 10) && isStr(g.a, 24) && isStr(g.an, 24) && Number.isFinite(g.t) && (g.ma == null || Number.isFinite(g.ma)) && (g.pt == null || isStr(g.pt, CFG.MAXCODE * 2));
+const okGame = g => isObj(g) && isStr(g.id, 40) && isStr(g.ti, 80) && LANGS[g.l] && isStr(g.c, CFG.MAXCODE + 10) && isStr(g.a, 24) && isStr(g.an, 24) && Number.isFinite(g.t) && (g.ma == null || Number.isFinite(g.ma)) && (g.pt == null || isStr(g.pt, CFG.MAXCODE * 2)) && (g.tg == null || (Array.isArray(g.tg) && g.tg.length <= 5 && g.tg.every(x => isStr(x, 16)))) && (g.th == null || (isStr(g.th, 24000) && /^data:image\/jpeg;base64,/.test(g.th))) && (g.e == null || Number.isFinite(g.e));
+const okCmt = c => isObj(c) && isStr(c.u, 24) && isStr(c.m, 200) && c.m.length > 0 && Number.isFinite(c.t) && (c.x == null || c.x === 1);
 function norm(d) {
   const o = emptyDB(); if (!isObj(d)) return o;
-  for (const k of ['users', 'games', 'votes', 'gone', 'bans', 'profiles', 'follows', 'sys']) if (isObj(d[k])) o[k] = d[k];
+  for (const k of ['users', 'games', 'votes', 'gone', 'bans', 'profiles', 'follows', 'sys', 'plays', 'comments']) if (isObj(d[k])) o[k] = d[k];
   if (isObj(d.ai) && d.ai.ct && Number.isFinite(d.ai.t)) o.ai = d.ai;
   return o;
 }
@@ -182,7 +183,9 @@ function merge(a, b) {
   for (const s of [a, b]) for (const k in s.gone) { const g = s.gone[k]; if (!Array.isArray(g)) continue; const c = o.gone[k]; if (!c || (k.startsWith('usr-') && g[1] > c[1])) o.gone[k] = g; }
   for (const s of [a, b]) {
     for (const k in s.users) { const u = s.users[k]; if (!okUser(u)) continue; const tb = o.gone['usr-' + k]; if (tb && u.t <= tb[1]) continue; const c = o.users[k]; if (!c || newerUser(u, c)) o.users[k] = u; }
-    for (const k in s.games) { const g = s.games[k]; if (!k.startsWith('seed-') && okGame(g) && g.id === k && !o.games[k]) o.games[k] = g; }
+    for (const k in s.games) { const g = s.games[k]; if (!k.startsWith('seed-') && okGame(g) && g.id === k && (!o.games[k] || (g.e || g.t) > (o.games[k].e || o.games[k].t))) o.games[k] = g; }
+    for (const gid in s.plays) { if (!isObj(s.plays[gid])) continue; const m = o.plays[gid] || (o.plays[gid] = {}); for (const dv in s.plays[gid]) { const n = s.plays[gid][dv]; if (/^[0-9a-f]{12}$/.test(dv) && Number.isFinite(n) && n >= 0 && n < 1e7 && (!(dv in m) || n > m[dv])) m[dv] = n; } }
+    for (const gid in s.comments) { if (!isObj(s.comments[gid])) continue; const m = o.comments[gid] || (o.comments[gid] = {}); for (const cid in s.comments[gid]) { const c = s.comments[gid][cid]; if (!/^[A-Za-z0-9_-]{6,30}$/.test(cid) || !okCmt(c)) continue; if (!m[cid]) m[cid] = c; else if (c.x) m[cid] = Object.assign({}, m[cid], { x: 1 }); } }
     for (const gid in s.votes) {
       if (!isObj(s.votes[gid])) continue; const m = o.votes[gid] || (o.votes[gid] = {});
       for (const u in s.votes[gid]) { const v = s.votes[gid][u]; if (Array.isArray(v) && (v[0] === 1 || v[0] === -1 || v[0] === 0) && Number.isFinite(v[1]) && (!m[u] || v[1] > m[u][1])) m[u] = v; }
@@ -195,14 +198,16 @@ function merge(a, b) {
   o.sys = mergeSys(a.sys || {}, b.sys || {});
   for (const k in o.profiles) { const tb = o.gone['usr-' + k]; if (tb && o.profiles[k].t <= tb[1]) delete o.profiles[k]; }
   for (const k in o.follows) { const [a, b] = k.split('|'); for (const x of [a, b]) { const tb = o.gone['usr-' + x]; if (tb && o.follows[k].t <= tb[1]) delete o.follows[k]; } }
-  for (const k in o.gone) { delete o.games[k]; delete o.votes[k]; }
+  for (const k in o.gone) { delete o.games[k]; delete o.votes[k]; delete o.plays[k]; delete o.comments[k]; }
   for (const k in o.votes) if (!o.games[k]) delete o.votes[k];
   return o;
 }
 function digest(d) {
   const p = [];
   for (const k in d.users) p.push('u' + k + d.users[k].t + ':' + (d.users[k].m || 0));
-  for (const k in d.games) p.push('g' + k);
+  for (const k in d.games) p.push('g' + k + (d.games[k].e || ''));
+  for (const g in d.plays) p.push('p' + g + ':' + Object.values(d.plays[g]).reduce((a, b) => a + b, 0) + '/' + Object.keys(d.plays[g]).length);
+  for (const g in d.comments) for (const c in d.comments[g]) p.push('c' + g + c + (d.comments[g][c].x ? 1 : 0));
   for (const k in d.gone) p.push('x' + k + (k.startsWith('usr-') ? ':' + d.gone[k][1] : ''));
   for (const g in d.votes) for (const u in d.votes[g]) p.push('v' + g + '|' + u + d.votes[g][u][1] + d.votes[g][u][0]);
   for (const k in d.profiles) p.push('p' + k + ':' + d.profiles[k].t);
@@ -425,6 +430,31 @@ const Auth = {
     try { const rec = CFG.STAFF.find(x => x.id === s.id); const r = rec && s.exp > now() && await openStaffRec(rec, b64d(s.k)); if (r) { SESS = { t: 'staff', n: r.u }; CHANGE(); return; } } catch (e) {}
     Store.del('gg.staff');
   },
+  /* ---- account tools (normal accounts) ---- */
+  async verifyPw(pw, prog) {
+    const m = me(); const u = m && !m.staff && DB.users[m.key]; if (!u) throw new Error('Sign in to a regular account first.');
+    if (lockLeft()) throw new Error('Too many attempts. Wait ' + lockLeft() + 's.');
+    if (!ctEq(await pbkdf2(pw, b64d(u.s), u.i, prog), b64d(u.h))) { fail(); throw new Error('Current password is wrong.'); }
+    Lock.n = 0; return u;
+  },
+  async changePassword(cur, np, cf, prog) {
+    const u = await this.verifyPw(cur, prog);
+    if (np.length < 8) throw new Error('New password must be at least 8 characters.'); if (np !== cf) throw new Error('New passwords do not match.'); if (np === cur) throw new Error('Pick a different password from the old one.');
+    const salt = rnd(16), k = ukey(u.n);
+    DB.users[k] = Object.assign({}, u, { s: b64e(salt), i: CFG.ITER, h: b64e(await pbkdf2(np, salt, CFG.ITER, prog)), m: now() }); commit();
+  },
+  async changeEmail(cur, email, prog) {
+    const u = await this.verifyPw(cur, prog); email = String(email || '').trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) throw new Error('Enter a valid email address.');
+    const id = await emailId(email); if (id === u.e) throw new Error('That is already your email.'); if (await emailTaken(email)) throw new Error('That email is already registered.');
+    DB.users[ukey(u.n)] = Object.assign({}, u, { e: id, m: now() }); commit();
+  },
+  async deleteSelf(pw, withGames, prog) {
+    const u = await this.verifyPw(pw, prog), k = ukey(u.n);
+    if (withGames) for (const g of Object.values(DB.games)) if (g.a === k) { DB.gone[g.id] = ['creator', now()]; delete DB.games[g.id]; delete DB.votes[g.id]; }
+    DB.gone['usr-' + k] = ['self', now()]; delete DB.users[k]; delete DB.profiles[k]; for (const f in DB.follows) if (f.split('|').includes(k)) delete DB.follows[f];
+    commit(); setSess(null);
+  },
   logout() { setSess(null); }
 };
 
@@ -484,6 +514,32 @@ function toggleFollow(k) {
   const id = m.key + '|' + k; DB.follows[id] = { t: now(), on: isFollowing(k) ? 0 : 1 }; commit(); return DB.follows[id].on === 1;
 }
 const likedBy = k => Object.keys(DB.votes).filter(gid => DB.games[gid] && DB.votes[gid][k] && DB.votes[gid][k][0] === 1).map(gid => DB.games[gid]);
+/* ---- play counts (one counter per device, so merging never loses a play) and comments ---- */
+const playsOf = gid => Object.values(DB.plays[gid] || {}).reduce((a, b) => a + b, 0);
+function bumpPlay(gid) {
+  if (!DB.games[gid]) return; const dev = Store.get('gg.dev', null); if (!/^[0-9a-f]{12}$/.test(dev || '')) return;
+  const seen = Store.get('gg.playseen', {}); if (now() - (seen[gid] || 0) < 600000) return; seen[gid] = now(); Store.set('gg.playseen', seen);
+  (DB.plays[gid] || (DB.plays[gid] = {}))[dev] = ((DB.plays[gid][dev]) || 0) + 1; commit();
+}
+const commentsOf = gid => Object.entries(DB.comments[gid] || {}).filter(([, c]) => !c.x).map(([id, c]) => Object.assign({ id }, c)).sort((a, b) => a.t - b.t);
+function addComment(gid, text) {
+  const m = me(); if (!m) throw new Error('Log in to comment.'); if (!DB.games[gid]) throw new Error('That game is gone.');
+  if (!m.staff && banOf(m.name)) throw new Error('You are banned.'); text = String(text || '').trim().slice(0, 200); if (!text) throw new Error('Write something first.');
+  const id = 'c' + hex(rnd(8)); (DB.comments[gid] || (DB.comments[gid] = {}))[id] = { u: m.name, m: text, t: now() };
+  const list = commentsOf(gid); if (list.length > 100) for (const o of list.slice(0, list.length - 100)) DB.comments[gid][o.id] = Object.assign({}, DB.comments[gid][o.id], { x: 1 });
+  commit(); return id;
+}
+function delComment(gid, cid) {
+  const m = me(), c = DB.comments[gid] && DB.comments[gid][cid], g = DB.games[gid]; if (!m || !c) return false;
+  if (!(m.staff || ukey(c.u) === m.key || (g && g.a === m.key))) return false;
+  DB.comments[gid][cid] = Object.assign({}, c, { x: 1 }); commit(); return true;
+}
+/* ---- muting / blocking people: saved only on this device ---- */
+const BLK = { get() { return Store.get('gg.blocked', {}); }, set(m) { Store.set('gg.blocked', m); CHANGE(); } };
+const isMuted = u => !!BLK.get()[ukey(u)];                        /* chat messages hidden */
+const isBlocked = u => BLK.get()[ukey(u)] === 'b';                /* chat + comments + their games hidden */
+function blockUser(u, mode) { const m = BLK.get(); m[ukey(u)] = mode === 'b' ? 'b' : 'm'; BLK.set(m); }
+function unblockUser(u) { const m = BLK.get(); delete m[ukey(u)]; BLK.set(m); }
 /* ---- games / votes ---- */
 const myVote = gid => { const m = me(); const v = m && DB.votes[gid] && DB.votes[gid][m.key]; return v ? v[0] : 0; };
 function tally(gid) { let up = 0, dn = 0; const v = DB.votes[gid] || {}; for (const k in v) { if (v[k][0] === 1) up++; else if (v[k][0] === -1) dn++; } return { up, dn, net: up - dn }; }
@@ -691,6 +747,8 @@ function openSettings() {
       h('div', { class: 'tog' }, h('span', {}, me() ? 'Signed in' + (me().staff ? ' as STAFF' : '') : 'Not signed in'), me() ? h('span', { class: 'row', style: 'flex:none;flex-wrap:nowrap' }, !me().staff ? h('button', { class: 'btn sm', onclick: () => { m.close(); openRecoverySetup(); } }, DB.users[me().key] && DB.users[me().key].rc ? 'Change recovery code' : 'Set recovery code') : null, h('button', { class: 'btn sm red', onclick: () => { Auth.logout(); m.close(); toast('SIGNED OUT'); } }, 'Sign out')) : h('button', { class: 'btn sm', onclick: () => { m.close(); openLogin(); } }, 'Login'))
     ];
     out.push(h('div', { class: 'sec-t' }, '// AGE FILTER'), h('div', { class: 'tog' }, h('span', {}, 'Your age: ' + (AGE == null ? 'not set' : AGE) + ' (stored only on this device)'), h('button', { class: 'btn sm', onclick: () => { m.close(); askAge(true); } }, 'Change')));
+    if (me() && !me().staff) out.push(h('div', { class: 'sec-t' }, '// ACCOUNT TOOLS'), h('div', { class: 'row' }, h('button', { class: 'btn sm', id: 'chPwBtn', onclick: () => { m.close(); openAccountTool('pw'); } }, '\u{1F511} Change password'), h('button', { class: 'btn sm', id: 'chEmBtn', onclick: () => { m.close(); openAccountTool('email'); } }, '\u2709 Change email'), h('button', { class: 'btn sm red', id: 'delMeBtn', onclick: () => { m.close(); openAccountTool('delete'); } }, '\u{1F5D1} Delete my account')), h('p', { class: 'hint' }, 'Your email is not verified (no email is ever sent), so keep your password and recovery code safe.'));
+    { const bl = Object.entries(BLK.get()); out.push(h('div', { class: 'sec-t' }, '// MUTED & BLOCKED (THIS DEVICE ONLY)'), bl.length ? h('div', {}, bl.map(([u, md]) => h('div', { class: 'tog' }, h('span', {}, '@' + u + ' // ' + (md === 'b' ? 'BLOCKED (chat, comments, games)' : 'MUTED (chat)')), h('button', { class: 'btn sm', onclick: () => { unblockUser(u); draw(); } }, 'Unblock')))) : h('p', { class: 'hint' }, 'Nobody. In chat, press 🔇 on a message to mute or block someone.')); }
     out.push(h('div', { class: 'sec-t' }, '// AI ENGINE'));
     out.push(h('div', { class: 'tog' }, h('span', {}, 'Groq key: ' + (localKeyOn() ? 'SAVED ON THIS DEVICE ONLY' : 'none on this device') + (localKeyOn() ? '' : '')), localKeyOn() ? h('button', { class: 'btn red sm', onclick: () => { AI.removeLocal(); toast('KEY REMOVED FROM THIS DEVICE', 'ok'); draw(); } }, 'Remove from this device') : h('span', { class: 'chip bad' }, h('i'), 'NOT SET')));
     out.push(h('div', { class: 'tog' }, h('span', {}, 'Shared site key: ' + (DB.ai && !DB.ai.del ? 'SEALED & SYNCED (all devices)' : 'NOT SET') + (DB.ai && !DB.ai.del && DB.ai.fp && (DB.ai.fp === CFG.AI_FP || DB.ai.fp === CFG.AI_FP2) ? ' (matches fingerprint)' : '')), DB.ai && !DB.ai.del ? h('span', { class: 'chip ok' }, h('i'), 'ONLINE') : h('span', { class: 'chip bad' }, h('i'), 'OFFLINE')));
@@ -725,7 +783,7 @@ function coverSVG(g) {
   s += `<text x="160" y="112" text-anchor="middle" font-family="Orbitron,sans-serif" font-weight="900" font-size="64" fill="none" stroke="${P[1]}" stroke-width="5" opacity=".7" transform="translate(4,0)">${mark.replace('<', '&lt;').replace('>', '&gt;')}</text><text x="160" y="112" text-anchor="middle" font-family="Orbitron,sans-serif" font-weight="900" font-size="64" fill="${P[0]}" opacity=".9">${mark.replace('<', '&lt;').replace('>', '&gt;')}</text></svg>`;
   return s;
 }
-const view = { lang: 'all', sort: 'new' }; let FRESH = new Set();
+const view = { lang: 'all', sort: 'new', tag: '' }; let FRESH = new Set();
 /* home page = clean address (no #top). #games only while a game is open; #create belongs to the studio. */
 let PLAYING = null;
 function setHash(hh) { if (Studio.el || location.hash === '#create') return; try { history.replaceState(null, '', location.pathname + location.search + (hh ? '#' + hh : '')); } catch (e) {} }
@@ -737,21 +795,26 @@ function wireHome() {
 function renderFilters() {
   const f = $('#filters'); f.replaceChildren();
   [['all', 'ALL'], ['js', 'JS'], ['py', 'PY'], ['cpp', 'C++'], ['html', 'HTML'], ['ai', 'AI']].forEach(([k, l]) => f.append(h('button', { class: 'btn sm' + (view.lang === k ? ' sel' : ''), onclick: () => { view.lang = k; renderFilters(); renderGames(); } }, l)));
-  f.append(h('button', { class: 'btn sm mg', onclick: () => { view.sort = view.sort === 'new' ? 'top' : 'new'; renderFilters(); renderGames(); } }, 'Sort: ' + view.sort.toUpperCase()));
+  f.append(h('button', { class: 'btn sm mg', onclick: () => { view.sort = { new: 'top', top: 'hot', hot: 'new' }[view.sort]; renderFilters(); renderGames(); } }, 'Sort: ' + ({ new: 'NEWEST', top: 'TOP', hot: 'TRENDING' })[view.sort]));
+  if (view.tag) f.append(h('button', { class: 'btn sm amb', title: 'Clear tag filter', onclick: () => { view.tag = ''; renderFilters(); renderGames(); } }, '#' + view.tag + ' \u2715'));
 }
 function renderGames() {
   const grid = $('#grid'); let list = Object.values(DB.games);
   const total = list.length;
+  list = list.filter(g => !isBlocked(g.an));
   if (view.lang !== 'all') list = list.filter(g => g.l === view.lang);
-  list.sort((a, b) => view.sort === 'top' ? (tally(b.id).net - tally(a.id).net) || b.t - a.t : b.t - a.t);
+  if (view.tag) list = list.filter(g => (g.tg || []).includes(view.tag));
+  /* trending = plays + 3 x net likes, fading with age (a game from a few hours ago beats an equally popular old one) */
+  const hot = g => (playsOf(g.id) + 3 * tally(g.id).net + 1) / Math.pow((now() - (g.e || g.t)) / 3600e3 + 2, .8);
+  list.sort((a, b) => view.sort === 'top' ? (tally(b.id).net - tally(a.id).net) || b.t - a.t : view.sort === 'hot' ? hot(b) - hot(a) : b.t - a.t);
   grid.replaceChildren();
   if (!list.length) grid.append(h('div', { class: 'empty' }, h('b', {}, total ? 'NO MATCHES' : 'NO GAMES YET'), total ? 'Try another filter.' : 'Hit the + button and post the first game.'));
   list.forEach((g, i) => {
     const tl = tally(g.id), cover = h('div', { class: 'cover' }, h('span', { class: 'lang ' + g.l }, LANGS[g.l] === 'AI' ? 'AI' : g.l === 'cpp' ? 'C++' : g.l.toUpperCase()));
-    cover.insertAdjacentHTML('afterbegin', coverSVG(g));
+    if (g.th) cover.prepend(h('img', { class: 'thumb', src: g.th, alt: g.ti + ' thumbnail', loading: 'lazy' })); else cover.insertAdjacentHTML('afterbegin', coverSVG(g));
     grid.append(h('article', { class: 'card' + (FRESH.has(g.id) ? ' fresh' : '') + (blockedFor(g) ? ' locked' : ''), 'data-id': g.id, style: 'animation-delay:' + Math.min(i, 12) * 40 + 'ms' }, cover,
-      h('div', { class: 'cb' }, h('h3', {}, g.ti),
-        h('div', { class: 'meta' }, h('button', { class: 'by', type: 'button', title: 'View profile', onclick: () => openProfile(g.a) }, 'by @' + g.an), g.ng ? h('span', { class: 'ar', title: 'Scanned as not a game: no likes or dislikes' }, 'NOT A GAME') : null, h('span', {}, g.a === 'glitch_gamez' ? 'OFFICIAL' : timeAgo(g.t)), ratingOf(g) ? h('span', { class: 'ar' }, ratingOf(g) + '+') : (ratingOf(g) == null && AGE != null && AGE < 18 ? h('span', { class: 'ar', title: 'Not scanned yet' }, 'UNSCANNED') : null), h('span', { class: 'sc' + (tl.net < 0 ? ' neg' : '') }, (tl.net >= 0 ? '▲ ' : '▼ ') + Math.abs(tl.net))),
+      h('div', { class: 'cb' }, h('h3', {}, g.ti), (g.tg && g.tg.length) ? h('div', { class: 'tags' }, g.tg.slice(0, 4).map(x => h('button', { class: 'tagc', type: 'button', title: 'Show games tagged ' + x, onclick: () => { view.tag = x; renderFilters(); renderGames(); } }, '#' + x))) : null,
+        h('div', { class: 'meta' }, h('button', { class: 'by', type: 'button', title: 'View profile', onclick: () => openProfile(g.a) }, 'by @' + g.an), g.ng ? h('span', { class: 'ar', title: 'Scanned as not a game: no likes or dislikes' }, 'NOT A GAME') : null, h('span', { title: 'plays // comments' }, '\u25B6 ' + playsOf(g.id) + ' \u00B7 \u{1F4AC} ' + commentsOf(g.id).length), h('span', {}, g.a === 'glitch_gamez' ? 'OFFICIAL' : timeAgo(g.t)), ratingOf(g) ? h('span', { class: 'ar' }, ratingOf(g) + '+') : (ratingOf(g) == null && AGE != null && AGE < 18 ? h('span', { class: 'ar', title: 'Not scanned yet' }, 'UNSCANNED') : null), h('span', { class: 'sc' + (tl.net < 0 ? ' neg' : '') }, (tl.net >= 0 ? '▲ ' : '▼ ') + Math.abs(tl.net))),
         h('div', { class: 'cact' }, blockedFor(g) ? h('button', { class: 'btn red', disabled: true, title: 'Not suitable for your age' }, '🔒 ' + ratingOf(g) + '+') : h('button', { class: 'btn lime', onclick: () => openPlay(g) }, '▶ Play'), h('button', { class: 'btn', onclick: () => openOptions(g.id) }, '⋯ Options')))));
   });
   $('#stGames').textContent = total; $('#stUsers').textContent = Object.keys(DB.users).length;
@@ -765,11 +828,20 @@ function openOptions(gid) {
     const vote = v => { if (!me()) { m.close(); toast('LOG IN TO VOTE', 'bad'); return openLogin(); } castVote(gid, v); draw(); };
     const body = [h('p', { style: 'color:var(--tx);font:700 18px var(--disp)' }, g2.ti),
       g2.ng ? h('p', { class: 'hint' }, 'The AI scan labeled this as not a game, so it can\'t be liked or disliked.') : h('div', { class: 'votes' }, h('button', { class: 'btn' + (mv === 1 ? ' on' : ''), 'aria-label': 'Thumbs up', onclick: () => vote(1) }, '👍 ' + t.up), h('button', { class: 'btn mg dn' + (mv === -1 ? ' on' : ''), 'aria-label': 'Thumbs down', onclick: () => vote(-1) }, '👎 ' + t.dn))];
+    body.splice(1, 0, h('p', { class: 'hint', style: 'margin:0' }, '\u25B6 ' + playsOf(gid) + ' plays' + ((g2.tg || []).length ? ' // ' + g2.tg.map(x => '#' + x).join(' ') : '') + (g2.e ? ' // edited ' + timeAgo(g2.e) : '')));
+    if (canRemove(g2)) body.push(h('button', { class: 'btn lime', id: 'editGameBtn', onclick: () => { m.close(); Studio.openEdit(gid); } }, '\u270E Edit game'));
     body.push(h('button', { class: 'btn', onclick: () => openExport(g2) }, '⬇ Export'));
     if (canRemove(g2)) body.push(h('button', { class: 'btn red', onclick: async () => {
       const ok = await popup({ title: 'Remove game', big: 'Remove it?', msg: '"' + g2.ti + '" will be deleted from every device.', buttons: [{ label: 'Remove', value: true, cls: 'red' }, { label: 'Cancel', value: false }], escValue: false, cls: 'warn' });
       if (ok && removeGame(gid)) { m.close(); toast('GAME REMOVED FROM ALL DEVICES', 'ok'); }
     } }, '🗑 Remove'));
+    /* comments */
+    const cm = commentsOf(gid).filter(c => !isBlocked(c.u)), ta = h('input', { type: 'text', maxlength: 200, placeholder: me() ? 'Write a comment...' : 'Log in to comment', 'aria-label': 'Comment', name: 'comment', autocomplete: 'off', disabled: !me() }), err = h('div', { class: 'err', role: 'alert' });
+    body.push(h('div', { class: 'sec-t' }, '// COMMENTS (' + cm.length + ')'), h('div', { class: 'cmts' }, cm.length ? cm.slice(-30).map(c => h('div', { class: 'cmt' }, h('b', {}, '@' + c.u), h('i', {}, timeAgo(c.t)), h('span', {}, maskText(c.m)), (me() && (me().staff || ukey(c.u) === me().key || g2.a === me().key)) ? h('button', { class: 'bn', type: 'button', title: 'Delete comment', onclick: () => { delComment(gid, c.id); draw(); } }, '\u2715') : null)) : [h('p', { class: 'hint' }, 'No comments yet.')]),
+      h('form', { class: 'row', style: 'flex-wrap:nowrap', onsubmit: async e => {
+        e.preventDefault(); err.textContent = ''; const text = ta.value.trim(); if (!text) return; if (!me()) { m.close(); return openLogin(); }
+        try { const mod = await moderateText(text); if (!mod.ok) throw new Error('That comment is not allowed (' + mod.why + ').'); addComment(gid, maskText(text)); ta.value = ''; draw(); } catch (x) { err.textContent = '\u2717 ' + x.message; }
+      } }, h('div', { class: 'inp', style: 'flex:1' }, h('b', {}, '>'), ta), h('button', { class: 'btn lime sm', type: 'submit', disabled: !me() }, 'Post')), err);
     m.setBody(body);
   };
   draw();
@@ -780,6 +852,7 @@ const GAME_CSP = "default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' h
 const SHIM = `(function(){var E=function(m){try{parent.postMessage({gg:'err',m:String(m)},'*')}catch(e){}};
 window.addEventListener('error',function(e){E((e.message||'error')+(e.lineno?' (line '+e.lineno+')':''));var d=document.createElement('div');d.style.cssText='position:fixed;left:0;right:0;bottom:0;background:#300;color:#ff8080;font:12px monospace;padding:6px 10px;z-index:99999;white-space:pre-wrap';d.textContent='ERROR: '+(e.message||'')+(e.lineno?' (line '+e.lineno+')':'');(document.body||document.documentElement).appendChild(d)});
 window.addEventListener('unhandledrejection',function(e){E('Promise: '+(e.reason&&e.reason.message||e.reason))});
+window.addEventListener('message',function(e){if(e.data&&e.data.gg==='snap'){var d=null;try{var c=document.querySelector('canvas');if(c)d=c.toDataURL('image/jpeg',.8)}catch(x){}try{parent.postMessage({gg:'snapres',d:d},'*')}catch(x){}}});
 function mem(){var m={};return{getItem:function(k){return k in m?m[k]:null},setItem:function(k,v){m[k]=String(v)},removeItem:function(k){delete m[k]},clear:function(){m={}},key:function(i){return Object.keys(m)[i]||null},get length(){return Object.keys(m).length}}}
 ['localStorage','sessionStorage'].forEach(function(n){try{void window[n]}catch(e){try{Object.defineProperty(window,n,{value:mem(),configurable:true})}catch(x){}}});
 (function(){var J={};try{var i0=window.__GGCK;if(i0&&typeof i0==='object')for(var k0 in i0)J[k0]=String(i0[k0])}catch(e){}
@@ -823,7 +896,7 @@ function openPlay(g) {
   const t0 = now(), api = { esc: true, close() { if (api.closed) return; api.closed = true; trackPlay(g.id, now() - t0); if (PLAYING === api) { PLAYING = null; setHash(''); } f.src = 'about:blank'; ov.remove(); const i = modals.indexOf(api); if (i >= 0) modals.splice(i, 1); if (!modals.length && !Studio.el) document.body.classList.remove('noscroll'); } };
   ov.addEventListener('mousedown', e => { if (e.target === ov) api.close(); });
   $('#layer').append(ov); modals.push(api); document.body.classList.add('noscroll');
-  PLAYING = api; setHash('games'); refreshStat();
+  PLAYING = api; setHash('games'); refreshStat(); bumpPlay(g.id);
   setTimeout(() => f.focus(), 120);
 }
 
@@ -1328,7 +1401,7 @@ const Studio = {
   el: null,
   open(mode, opts) {
     if (this.el) return;
-    const S = this.s = { mode, reviewed: false, busy: false, port: null, verdict: null, hist: [], multi: false, lang: (opts && opts.lang) || 'html' };
+    const S = this.s = { mode, reviewed: false, busy: false, port: null, verdict: null, hist: [], multi: false, lang: (opts && opts.lang) || 'html', editId: (opts && opts.edit && opts.edit.id) || null, th: (opts && opts.edit && opts.edit.th) || null };
     S.files = { html: '', css: '', js: '' }; S.tab = 'html';
     const lang = () => mode === 'ai' ? S.lang : mode, eff = () => mode === 'ai' ? ({ html: 'ai', js: 'js', py: 'py', cpp: 'cpp' }[S.lang] || 'ai') : mode;
     S.eff = eff;
@@ -1337,7 +1410,10 @@ const Studio = {
     const title = h('input', { type: 'text', maxlength: CFG.MAXTITLE, placeholder: 'GAME TITLE', 'aria-label': 'Game title', style: 'flex:1;min-width:0;background:none;border:0;outline:0;padding:10px 0;font:700 18px var(--disp);letter-spacing:.06em;color:var(--tx)' });
     const stat = h('div', { class: 'stat2' }, 'AWAITING CODE // PRESS DONE WHEN READY');
     const pv = h('div', { class: 'pv' }, h('div', { class: 'pvtag' }, 'PREVIEW'), h('div', { class: 'ns' }, h('div', {}, h('b', {}, 'NO SIGNAL'), 'PRESS DONE TO LOAD PREVIEW')));
-    const pub = h('button', { class: 'btn lime big hide', onclick: () => this.publish() }, '▲ Publish');
+    const pub = h('button', { class: 'btn lime big hide', onclick: () => this.publish() }, S.editId ? '▲ Update game' : '▲ Publish');
+    const tagsIn = h('input', { type: 'text', maxlength: 100, placeholder: 'tags: shooter, 2d, space (up to 5)', 'aria-label': 'Tags', autocomplete: 'off', style: 'flex:1;min-width:0;background:none;border:0;outline:0;padding:9px 0;font:15px var(--mono);color:var(--tx)', value: opts && opts.edit && opts.edit.tg ? opts.edit.tg.join(', ') : '' });
+    const thPrev = h('img', { class: 'thprev', alt: '', style: 'display:' + (S.th ? 'inline-block' : 'none') + ';width:48px;height:27px;object-fit:cover;border:1px solid var(--ac)', src: S.th || '' });
+    const thBtn = h('button', { class: 'btn sm', id: 'thBtn', type: 'button', onclick: () => thumbDialog() }, '\u{1F5BC} Thumbnail');
     const doneBtn = h('button', { class: 'btn', onclick: () => this.done() }, '✔ Done');
     const file = h('input', { type: 'file', class: 'hide', accept: '.js,.py,.cpp,.cc,.cxx,.c,.h,.hpp,.html,.htm,.css,.txt', multiple: mode === 'html', onchange: async e => {
       const fl = [...e.target.files]; e.target.value = ''; if (!fl.length) return;
@@ -1348,8 +1424,9 @@ const Studio = {
     } });
     const head = h('div', { class: 'sth' }, pv,
       h('div', { class: 'stm' },
-        h('div', { class: 'tl' }, h('button', { class: 'btn sm red', onclick: () => this.exit() }, '← Exit'), statEl(), h('span', { class: 'mode' }, { js: 'JAVASCRIPT STUDIO', py: 'PYTHON STUDIO', cpp: 'C++ STUDIO', html: 'HTML STUDIO', ai: 'CODE WITH AI' }[mode])),
+        h('div', { class: 'tl' }, h('button', { class: 'btn sm red', onclick: () => this.exit() }, '← Exit'), statEl(), h('span', { class: 'mode' }, (opts && opts.edit ? 'EDIT: ' : '') + { js: 'JAVASCRIPT STUDIO', py: 'PYTHON STUDIO', cpp: 'C++ STUDIO', html: 'HTML STUDIO', ai: 'CODE WITH AI' }[mode])),
         h('div', { class: 'inp', style: 'padding:0 12px' }, h('b', {}, '#'), title),
+        h('div', { class: 'tl' }, h('div', { class: 'inp', style: 'padding:0 12px;flex:1;min-width:150px' }, h('b', {}, '\u{1F3F7}'), tagsIn), thPrev, thBtn),
         h('div', { class: 'tl' }, doneBtn, mode !== 'ai' ? h('button', { class: 'btn sm', onclick: () => file.click() }, 'Open file') : null, file, h('button', { class: 'btn sm', id: 'expBtn', onclick: () => Studio.exportNow() }, '⬇ Export'), h('span', { class: 'stat2', id: 'cnt' })),
         stat, h('div', { class: 'scanbar hide', id: 'sbar' })),
       h('div', { class: 'pubw' }, pub));
@@ -1416,14 +1493,27 @@ const Studio = {
       if (!g) { pv.append(h('div', { class: 'ns' }, h('div', {}, h('b', {}, 'NO SIGNAL'), 'PRESS DONE TO LOAD PREVIEW'))); return; }
       S.pvFrame = gameFrame(g); pv.append(S.pvFrame, h('button', { class: 'btn sm pvx', onclick: () => openPlay(Object.assign({ ti: title.value || 'Preview', an: me().name }, g)) }, '⤢ Big'));
     };
+    const setTh = d => { S.th = d || null; thPrev.src = d || ''; thPrev.style.display = d ? 'inline-block' : 'none'; };
+    const cropThumb = src => new Promise((res, rej) => { const i = new Image(); i.onerror = () => rej(new Error('That image could not be read.')); i.onload = () => { const c = document.createElement('canvas'); c.width = 320; c.height = 180; const x = c.getContext('2d'); x.fillStyle = '#000'; x.fillRect(0, 0, 320, 180); const k = Math.max(320 / i.width, 180 / i.height), w = i.width * k, hh = i.height * k; x.drawImage(i, (320 - w) / 2, (180 - hh) / 2, w, hh); let q = .8, d = c.toDataURL('image/jpeg', q); while (d.length > 22000 && q > .3) { q -= .1; d = c.toDataURL('image/jpeg', q); } d.length > 22000 ? rej(new Error('That picture is too detailed.')) : res(d); }; i.src = src; });
+    const thumbDialog = () => {
+      const file = h('input', { type: 'file', accept: 'image/png,image/jpeg,image/webp', class: 'hide', onchange: async e => { const f = e.target.files[0]; e.target.value = ''; if (!f) return; try { if (f.size > 8e6) throw new Error('Choose a picture under 8 MB.'); setTh(await cropThumb(URL.createObjectURL(f))); tm.close(); toast('THUMBNAIL SET', 'ok'); } catch (x) { terr.textContent = '\u2717 ' + x.message; } } }), terr = h('div', { class: 'err', role: 'alert' });
+      const tm = openModal({ title: 'Game thumbnail', body: [h('p', { class: 'hint' }, 'A 16:9 picture shown on your game card. Use a screenshot of your game.'), h('div', { class: 'row' }, h('button', { class: 'btn lime', id: 'thUp', type: 'button', onclick: () => file.click() }, '\u{1F4C1} Upload a picture'), h('button', { class: 'btn', id: 'thCap', type: 'button', onclick: () => { if (!S.pvFrame) { terr.textContent = '\u2717 Press DONE first so the preview is running, then capture.'; return; } terr.textContent = ''; S.pvFrame.contentWindow.postMessage({ gg: 'snap' }, '*'); } }, '\u{1F4F8} Capture from preview'), S.th ? h('button', { class: 'btn red sm', type: 'button', onclick: () => { setTh(null); tm.close(); } }, 'Remove') : null), file, terr] });
+      S.snapDone = async d => { if (!d) { terr.textContent = '\u2717 This game has no canvas to capture. Upload a picture instead.'; return; } try { setTh(await cropThumb(d)); tm.close(); toast('THUMBNAIL CAPTURED', 'ok'); } catch (x) { terr.textContent = '\u2717 ' + x.message; } };
+    };
+    S.tagsIn = tagsIn;
     this.api = { S, ta, title, stat, setStat, setPv, pub, doneBtn, sync, sbar: $('#sbar', root) };
-    window.addEventListener('message', this.onMsg = e => { if (S.pvFrame && e.source === S.pvFrame.contentWindow && e.data && e.data.gg === 'err') setStat('⚠ PREVIEW ERROR: ' + String(e.data.m).slice(0, 140), 'bad'); });
+    window.addEventListener('message', this.onMsg = e => { if (S.pvFrame && e.source === S.pvFrame.contentWindow && e.data && e.data.gg === 'snapres') { S.snapDone && S.snapDone(e.data.d); } else if (S.pvFrame && e.source === S.pvFrame.contentWindow && e.data && e.data.gg === 'err') setStat('⚠ PREVIEW ERROR: ' + String(e.data.m).slice(0, 140), 'bad'); });
+    if (opts && opts.edit) { const g = opts.edit; title.value = g.ti; if (mode === 'html') { S.files.html = g.c; ta.value = g.c; } else ta.value = g.c; setStat('EDITING // change the code, press DONE to re-scan, then Update', ''); }
     if (opts && opts.draft) { const d = opts.draft; if (mode === 'html' && d.files) { for (const k of ['html', 'css', 'js']) S.files[k] = String(d.files[k] || '').slice(0, CFG.MAXCODE + 1000); ta.value = S.files.html; } else ta.value = String(d.c || '').slice(0, CFG.MAXCODE + 1000); title.value = String(d.ti || '').slice(0, CFG.MAXTITLE); if (mode === 'ai') { S.lang = LANGKEYS.includes(d.lang) ? d.lang : 'html'; langBtns.forEach(b => b.classList.toggle('sel', b.dataset.lang === S.lang)); ta.placeholder = ta.placeholder; say('Welcome back! 👋 I saved your ' + ({ html: 'HTML', js: 'JavaScript', py: 'Python', cpp: 'C++' })[S.lang] + ' game draft.', 'bot'); } }
     if (location.hash !== '#create') { try { history.pushState(null, '', location.pathname + location.search + '#create'); } catch (e) { location.hash = 'create'; } }
     sync(); setTimeout(() => (mode === 'ai' ? chatta : ta).focus(), 50);
   },
+  openEdit(gid) {
+    const g = DB.games[gid]; if (!g) return toast('THAT GAME IS GONE', 'bad'); if (!canRemove(g)) return toast('ONLY ITS CREATOR OR STAFF CAN EDIT IT', 'bad');
+    if (this.el) return; this.open(g.l === 'ai' ? 'html' : g.l, { edit: g });
+  },
   /* remember what you are making (the address only says #create) */
-  save() { const a = this.api, S = this.s; if (!a || !S || !me()) return; const code = S.getCode(); if (!code.trim() && !a.title.value.trim()) { Store.del('gg.draft'); return; } Store.set('gg.draft', Object.assign({ u: me().key, mode: S.mode, lang: S.mode === 'ai' ? S.lang : S.mode, c: S.mode === 'html' ? '' : a.ta.value, ti: a.title.value, t: now() }, S.mode === 'html' ? { files: S.files } : {})); },
+  save() { const a = this.api, S = this.s; if (!a || !S || !me() || S.editId) return; const code = S.getCode(); if (!code.trim() && !a.title.value.trim()) { Store.del('gg.draft'); return; } Store.set('gg.draft', Object.assign({ u: me().key, mode: S.mode, lang: S.mode === 'ai' ? S.lang : S.mode, c: S.mode === 'html' ? '' : a.ta.value, ti: a.title.value, t: now() }, S.mode === 'html' ? { files: S.files } : {})); },
   resume() {
     if (this.el || location.hash !== '#create') return;
     if (!me()) { requireLogin(); try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} return; }
@@ -1482,13 +1572,19 @@ const Studio = {
     if (!S.reviewed) return toast('PRESS DONE FIRST', 'bad');
     if (!m) return requireLogin();
     const ti = title.value.trim().slice(0, CFG.MAXTITLE); if (!ti) return toast('GIVE YOUR GAME A TITLE', 'bad');
-    const g = { id: uid(), ti, l: S.eff(), c: S.getCode(), a: m.key, an: m.name, t: now() };
-    if (m.t != null) g.ag = m.t;
+    const tg = [...new Set(String(S.tagsIn.value || '').toLowerCase().split(/[\s,#]+/).map(x => x.replace(/[^a-z0-9_-]/g, '').slice(0, 16)).filter(x => x.length >= 2 && !hardBlock(x)))].slice(0, 5);
+    let g;
+    if (S.editId) {   /* update the same game: same id, so its likes, plays and comments stay */
+      const old = DB.games[S.editId]; if (!old) return toast('THAT GAME IS GONE', 'bad'); if (!canRemove(old)) return toast('ONLY ITS CREATOR OR STAFF CAN EDIT IT', 'bad');
+      g = Object.assign({}, old, { ti, l: S.eff(), c: S.getCode(), e: Math.max(now(), (old.e || old.t) + 1) }); delete g.pt; delete g.ng; delete g.ma;
+    } else { g = { id: uid(), ti, l: S.eff(), c: S.getCode(), a: m.key, an: m.name, t: now() }; if (m.t != null) g.ag = m.t; }
     if (S.eff() === 'cpp' || S.eff() === 'py') g.pt = S.port;
     if (S.age != null) g.ma = S.age;
     if (S.ng) g.ng = 1;
-    Store.del('gg.draft'); addGame(g); FRESH = new Set([g.id]); setTimeout(() => { FRESH = new Set(); }, 6000);
-    this.close(); renderGames(); toast(Sync.url() ? 'PUBLISHED // SYNCING TO ALL DEVICES' : 'PUBLISHED ON THIS DEVICE', 'ok');
+    if (tg.length) g.tg = tg; else delete g.tg;
+    if (S.th) g.th = S.th; else delete g.th;
+    if (!S.editId) Store.del('gg.draft'); addGame(g); FRESH = new Set([g.id]); setTimeout(() => { FRESH = new Set(); }, 6000);
+    const wasEdit = !!S.editId; this.close(); renderGames(); toast(wasEdit ? (Sync.url() ? 'GAME UPDATED // SYNCING TO ALL DEVICES' : 'GAME UPDATED ON THIS DEVICE') : (Sync.url() ? 'PUBLISHED // SYNCING TO ALL DEVICES' : 'PUBLISHED ON THIS DEVICE'), 'ok');
     setTimeout(() => { const c = $('.card[data-id="' + g.id + '"]'); c && c.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 100);
   },
   async exit() {
@@ -1686,12 +1782,14 @@ const Chat = {
       if (this.seen.has(m.id)) return; this.seen.add(m.id);
       if (m.clear) { this.applyClear(m.clear, box, sysLine, true); return; }
       if (m.t <= this.clearT) return;
+      if (isMuted(m.u) && !(me() && m.u.toLowerCase() === me().key)) return;
       const mine = me() && m.u.toLowerCase() === me().key, stick = box.scrollTop + box.clientHeight >= box.scrollHeight - 30;
       const el = h('div', { class: 'cm' + (mine ? ' me' : '') }, h('b', {}, m.u), h('i', {}, new Date(m.t).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })), h('span', {}, m.m));
       el.dataset.u = m.u; el.dataset.t = m.t; el.hidden = hiddenByBan(m.u, m.t);
       if (m.g) { const gm = DB.games[m.g.id]; el.append(h('div', { class: 'fcard' }, h('span', { class: 'lang ' + m.g.l }, m.g.l === 'cpp' ? 'C++' : m.g.l.toUpperCase()), h('b', {}, m.g.ti), h('button', { class: 'btn lime sm', type: 'button', onclick: () => { const g2 = DB.games[m.g.id]; if (!g2) return toast('THAT GAME IS NOT ON THIS DEVICE YET', 'bad'); openPlay(g2); } }, '▶ Play'))); }
       if (m.f) el.append(fileCard(m.f));
       if (m.gif) el.append(h('div', { class: 'fcard gifw', hidden: modOff('giphy') }, h('img', { class: 'gifmsg', src: m.gif.url, alt: m.gif.t, loading: 'lazy', width: m.gif.w || undefined, height: m.gif.h || undefined }), h('i', {}, 'via GIPHY')));
+      if (me() && !mine && NAME_RE.test(m.u)) el.append(h('button', { class: 'bn mu', type: 'button', title: 'Mute or block ' + m.u, onclick: () => openMuteDialog(m.u) }, '\u{1F507} MUTE'));
       if (isStaff() && !mine && NAME_RE.test(m.u) && !staffFind(m.u)) el.append(h('button', { class: 'bn', type: 'button', title: 'Ban ' + m.u + ' from chat', onclick: () => openBanDialog(m.u) }, '\u{1F6AB} BAN'));
       box.append(el);
       while (box.children.length > 150) box.firstChild.remove();
@@ -1724,7 +1822,7 @@ const Chat = {
       const bn = me() && !me().staff && banOf(me().name);
       if (bn) { st.className = 'chip bad'; st.lastChild.textContent = 'BANNED'; }
       inp.disabled = send.disabled = !this.online || !!bn; inp.placeholder = bn ? 'You are banned ' + banLeft(bn) : 'Message as ' + me().name + '...';
-    }, refresh: () => { [...box.children].forEach(el => { el.hidden = hiddenByBan(el.dataset.u, +el.dataset.t); }); box.querySelectorAll('.gifw').forEach(e => { e.hidden = modOff('giphy'); }); const gb = $('#shGif'); if (gb) { gb.disabled = modOff('giphy'); gb.title = modOff('giphy') ? 'GIFs are shut down by staff' : ''; } this.win && this.win.status(); } };
+    }, refresh: () => { [...box.children].forEach(el => { el.hidden = hiddenByBan(el.dataset.u, +el.dataset.t) || (!!el.dataset.u && isMuted(el.dataset.u) && !(me() && el.dataset.u.toLowerCase() === me().key)); }); box.querySelectorAll('.gifw').forEach(e => { e.hidden = modOff('giphy'); }); const gb = $('#shGif'); if (gb) { gb.disabled = modOff('giphy'); gb.title = modOff('giphy') ? 'GIFs are shut down by staff' : ''; } this.win && this.win.status(); } };
     this.modal = m; this.mkEs = () => {
       this.es.forEach(e => e.close()); this.es = []; const fbs = this.fbSlots();
       if (fbs.length) {
@@ -2036,8 +2134,8 @@ function shrinkPhoto(file) {
 function runSearch(q) {
   const box = $('#srRes'); q = q.trim().toLowerCase();
   if (!q) { box.replaceChildren(h('div', { class: 'srow', style: 'cursor:default' }, 'Type to search profiles and games.')); box.classList.remove('hide'); return; }
-  const users = people().filter(k => k.includes(q) || dispName(k).toLowerCase().includes(q)).sort((a, b) => followers(b) - followers(a) || a.localeCompare(b)).slice(0, 6);
-  const games = Object.values(DB.games).filter(g => g.ti.toLowerCase().includes(q) || g.an.toLowerCase().includes(q)).slice(0, 6);
+  const users = people().filter(k => !isBlocked(k) && k.includes(q) || dispName(k).toLowerCase().includes(q)).sort((a, b) => followers(b) - followers(a) || a.localeCompare(b)).slice(0, 6);
+  const games = Object.values(DB.games).filter(g => !isBlocked(g.an) && (g.ti.toLowerCase().includes(q) || g.an.toLowerCase().includes(q) || (g.tg || []).some(x => x.includes(q.replace(/^#/, ''))))).slice(0, 6);
   const out = [];
   if (users.length) { out.push(h('h4', {}, 'PROFILES')); users.forEach(k => out.push(h('button', { class: 'srow', type: 'button', onclick: () => { box.classList.add('hide'); openProfile(k); } }, avatar(k, 34), h('span', {}, dispName(k), profOf(k) && profOf(k).st ? h('em', { class: 'stb', style: 'margin-left:8px;color:var(--amb,#ffd400);font:700 11px var(--mono);font-style:normal' }, 'STAFF') : null), h('small', {}, followers(k) + ' follow' + (followers(k) === 1 ? '' : 's'))))); }
   if (games.length) { out.push(h('h4', {}, 'GAMES')); games.forEach(g => out.push(h('button', { class: 'srow', type: 'button', onclick: () => { box.classList.add('hide'); const c = $('.card[data-id="' + g.id + '"]'); if (c) { c.scrollIntoView({ behavior: 'smooth', block: 'center' }); c.classList.add('fresh'); setTimeout(() => c.classList.remove('fresh'), 2500); } else openPlay(g); } }, h('span', { class: 'lang ' + g.l, style: 'flex:none' }, g.l === 'cpp' ? 'C++' : g.l.toUpperCase()), h('span', {}, g.ti), h('small', {}, '@' + g.an)))); }
@@ -2066,6 +2164,30 @@ function openDeleteAccounts() {
   q.input.addEventListener('input', draw); draw();
 }
 
+/* ---- account tools: change password, change email, delete my account ---- */
+function openAccountTool(kind) {
+  const m0 = me(); if (!m0 || m0.staff) return;
+  const cur = field(kind === 'delete' ? 'Your password' : 'Current password', { type: 'password', name: 'cur', ac: 'current-password', max: 100 }), err = h('div', { class: 'err', role: 'alert' }), go = h('button', { class: 'btn ' + (kind === 'delete' ? 'red' : 'lime'), type: 'submit' }, kind === 'pw' ? 'Change password' : kind === 'email' ? 'Change email' : 'Delete my account');
+  const np = kind === 'pw' ? field('New password', { type: 'password', name: 'np', ac: 'new-password', max: 100 }) : null, cf = kind === 'pw' ? field('Confirm new password', { type: 'password', name: 'cf', ac: 'new-password', max: 100 }) : null, em = kind === 'email' ? field('New email', { name: 'newemail', ac: 'email', max: 120 }) : null;
+  const wg = kind === 'delete' ? h('label', { class: 'tog', style: 'cursor:pointer' }, h('span', {}, 'Also delete the games I published'), h('input', { type: 'checkbox', id: 'delGames' })) : null;
+  const m = openModal({ title: kind === 'pw' ? 'Change password' : kind === 'email' ? 'Change email' : 'Delete my account', cls: kind === 'delete' ? 'warn' : '', body: [h('form', { style: 'display:flex;flex-direction:column;gap:12px', novalidate: true, onsubmit: async e => {
+    e.preventDefault(); err.textContent = ''; go.disabled = true;
+    try {
+      if (kind === 'pw') { await Auth.changePassword(cur.input.value, np.input.value, cf.input.value); toast('PASSWORD CHANGED', 'ok'); m.close(); }
+      else if (kind === 'email') { await Auth.changeEmail(cur.input.value, em.input.value); toast('EMAIL CHANGED', 'ok'); m.close(); }
+      else {
+        const sure = await popup({ title: 'Delete account', big: 'Delete @' + m0.name + '?', msg: 'This removes your account from every device. You cannot undo it.' + (wg.querySelector('input').checked ? ' Your games will be deleted too.' : ' Your games stay up.'), buttons: [{ label: 'Delete forever', value: true, cls: 'red' }, { label: 'Cancel', value: false }], escValue: false, cls: 'warn' });
+        if (sure) { await Auth.deleteSelf(cur.input.value, wg.querySelector('input').checked); toast('ACCOUNT DELETED', 'ok'); m.close(); }
+      }
+    } catch (x) { err.textContent = '\u2717 ' + x.message; shakeIt(m.el); }
+    go.disabled = false;
+  } }, kind === 'delete' ? h('p', { style: 'margin:0;color:var(--tx)' }, 'Type your password to delete your account for good.') : null, cur.wrap, np ? np.wrap : null, cf ? cf.wrap : null, em ? em.wrap : null, wg, err, h('div', { class: 'row' }, go, h('button', { class: 'btn', type: 'button', onclick: () => m.close() }, 'Cancel')))] });
+}
+/* ---- mute / block a person (this device only) ---- */
+async function openMuteDialog(name) {
+  const v = await popup({ title: 'Mute or block', big: '@' + name, msg: 'Mute hides their chat messages. Block also hides their comments and their games. Only on this device, and you can undo it in Settings.', buttons: [{ label: 'Mute', value: 'm', cls: 'amb' }, { label: 'Block', value: 'b', cls: 'red' }, { label: 'Cancel', value: false }], escValue: false, cls: 'warn' });
+  if (v) { blockUser(name, v); toast((v === 'b' ? 'BLOCKED ' : 'MUTED ') + name.toUpperCase(), 'ok'); }
+}
 function wireSocial() {
   const inp = $('#srchIn'); let tm = 0;
   inp.addEventListener('input', () => { clearTimeout(tm); tm = setTimeout(() => runSearch(inp.value), 120); });

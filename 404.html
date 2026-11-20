@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="theme-color" content="#05060f">
+<title>404 // SIGNAL LOST - Glitch Game X</title>
+<style>
+:root{--ac:#00f0ff;--mg:#ff2bd6;--lime:#b6ff00;--bg:#05060f}
+*{box-sizing:border-box}html,body{height:100%;margin:0;background:var(--bg);color:#d6f6ff;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center;background:radial-gradient(900px 600px at 70% -10%,#12123a 0,transparent 60%),radial-gradient(700px 500px at 0 110%,#2a0b36 0,transparent 55%),var(--bg)}
+#rain{position:fixed;inset:0;opacity:.35;z-index:0}
+main{position:relative;z-index:1;text-align:center;padding:24px;max-width:760px}
+.kick{color:var(--mg);letter-spacing:.3em;font-size:13px;margin-bottom:10px;animation:flick 3s infinite}
+.big{position:relative;font:900 clamp(96px,26vw,230px)/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.06em;color:#e8fdff;text-shadow:0 0 24px rgba(0,240,255,.55);display:inline-block;animation:jit 2.6s infinite steps(1)}
+.big::before,.big::after{content:attr(data-t);position:absolute;inset:0;overflow:hidden}
+.big::before{color:var(--mg);left:5px;mix-blend-mode:screen;animation:sl1 1.9s infinite linear alternate-reverse}
+.big::after{color:var(--ac);left:-5px;mix-blend-mode:screen;animation:sl2 2.3s infinite linear alternate-reverse}
+@keyframes sl1{0%{clip-path:inset(0 0 88% 0)}10%{clip-path:inset(30% 0 52% 0)}20%{clip-path:inset(72% 0 8% 0)}30%{clip-path:inset(12% 0 70% 0)}40%{clip-path:inset(55% 0 30% 0)}50%{clip-path:inset(84% 0 2% 0)}60%{clip-path:inset(20% 0 64% 0)}70%{clip-path:inset(46% 0 40% 0)}80%{clip-path:inset(4% 0 86% 0)}100%{clip-path:inset(62% 0 22% 0)}}
+@keyframes sl2{0%{clip-path:inset(66% 0 20% 0)}12%{clip-path:inset(8% 0 80% 0)}24%{clip-path:inset(50% 0 36% 0)}36%{clip-path:inset(86% 0 4% 0)}48%{clip-path:inset(24% 0 60% 0)}60%{clip-path:inset(2% 0 92% 0)}72%{clip-path:inset(40% 0 44% 0)}84%{clip-path:inset(76% 0 10% 0)}100%{clip-path:inset(14% 0 72% 0)}}
+@keyframes jit{0%,92%,100%{transform:none}93%{transform:translate(-6px,2px) skewX(6deg)}95%{transform:translate(8px,-3px) skewX(-8deg)}97%{transform:translate(-3px,0)}}
+@keyframes flick{0%,100%{opacity:1}48%{opacity:1}50%{opacity:.35}52%{opacity:1}}
+h1{margin:6px 0 4px;font:700 clamp(20px,4.6vw,30px) ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;color:var(--ac)}
+p{margin:6px 0;color:#9cb7c4;line-height:1.5}
+#path{color:var(--lime);word-break:break-all}
+#log{margin:18px auto 22px;text-align:left;max-width:520px;font-size:13px;color:#7fa;min-height:84px;border:1px solid rgba(0,240,255,.25);background:rgba(0,0,0,.35);padding:10px 14px;white-space:pre-wrap}
+.btn{display:inline-block;margin:6px;padding:13px 24px;color:var(--ac);border:1px solid var(--ac);text-decoration:none;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:rgba(0,240,255,.06);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:.15s}
+.btn:hover{background:var(--ac);color:#000;box-shadow:0 0 24px rgba(0,240,255,.6)}.btn.m{color:var(--mg);border-color:var(--mg);background:rgba(255,43,214,.06)}.btn.m:hover{background:var(--mg);color:#000;box-shadow:0 0 24px rgba(255,43,214,.6)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head><body>
+<canvas id="rain" aria-hidden="true"></canvas>
+<main>
+ <div class="kick">// ERROR 404 // SIGNAL LOST</div>
+ <div class="big" id="big" data-t="404" role="img" aria-label="404">404</div>
+ <h1 id="title">THIS PAGE GLITCHED OUT</h1>
+ <p>We looked everywhere in the arcade but <span id="path">this page</span> isn't here. It may have been moved, deleted, or sucked into the glitch.</p>
+ <div id="log" aria-hidden="true"></div>
+ <a class="btn" href="/">&#8617; Back to the arcade</a><a class="btn m" href="/#games">&#9654; Browse games</a>
+</main>
+<script>
+(function(){
+ var p=document.getElementById('path');try{p.textContent=location.pathname.slice(0,80)||'this page'}catch(e){}
+ // glitchy log lines typed out
+ var L=['> loading page ........ FAILED','> searching the grid ..... NOTHING','> reconnecting to arcade . OK','> rerouting you home ..... READY'],log=document.getElementById('log'),i=0,c=0;
+ (function type(){if(i>=L.length)return;log.textContent=L.slice(0,i).join('\n')+(i?'\n':'')+L[i].slice(0,c);c++;if(c>L[i].length){i++;c=0;setTimeout(type,260)}else setTimeout(type,24)})();
+ // random letter corruption in the heading
+ var t=document.getElementById('title'),orig=t.textContent,ch='#@%&$!?/\\|<>01';setInterval(function(){if(Math.random()<.7)return;var a=orig.split('');for(var k=0;k<3;k++){var n=Math.floor(Math.random()*a.length);if(a[n]!==' ')a[n]=ch.charAt(Math.floor(Math.random()*ch.length))}t.textContent=a.join('');setTimeout(function(){t.textContent=orig},110)},900);
+ // digital rain
+ var cv=document.getElementById('rain'),x=cv.getContext('2d'),w,h,cols,drops;function size(){w=cv.width=innerWidth;h=cv.height=innerHeight;cols=Math.ceil(w/18);drops=[];for(var k=0;k<cols;k++)drops.push(Math.random()*h/18)}size();addEventListener('resize',size);
+ var g='01<>/\\{}[]#$%GAMEX';if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(function(){x.fillStyle='rgba(5,6,15,.14)';x.fillRect(0,0,w,h);x.font='16px monospace';for(var k=0;k<cols;k++){x.fillStyle=Math.random()<.04?'#ff2bd6':'#00f0ff';x.fillText(g.charAt(Math.floor(Math.random()*g.length)),k*18,drops[k]*18);if(drops[k]*18>h&&Math.random()>.975)drops[k]=0;drops[k]+=1}},60);
+})();
+</script>
+</body></html>
