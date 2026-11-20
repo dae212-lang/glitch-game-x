@@ -250,3 +250,7 @@ body.compact .nav{gap:6px;padding:6px 10px}body.compact .navr{gap:5px}body.compa
 body.navbig .nav{padding-top:14px;padding-bottom:14px;gap:16px}body.navbig .navr{gap:12px}body.navbig .nav .btn{font-size:18px;padding:13px 19px}body.navbig .nav .brand b{font-size:26px}body.navbig .nav .brand svg{width:52px;height:52px}
 body.navbig .nav .chip{font-size:14px;padding:6px 12px}body.navbig .nav .who{font-size:16px}body.navbig .nav .gg-stat small,body.navbig .nav .chipw small{font-size:12px}body.navbig .nav .srch input{font-size:17px;padding:12px 14px}
 @media(max-width:760px){body.navbig .nav{padding-top:10px;padding-bottom:10px;gap:8px}body.navbig .navr{gap:8px}body.navbig .nav .btn{font-size:14px;padding:10px 12px}body.navbig .nav .brand b{font-size:18px}body.navbig .nav .brand svg{width:38px;height:38px}body.navbig .nav .chip{font-size:12px;padding:5px 9px}}
+/* fixed-size status area: its text changes every few seconds (Synced / Syncing... / N online), which used to change the width, re-wrap the bar and make it jump in size */
+.nav .chipw{width:104px;flex:none;box-sizing:border-box}.nav #syncChip{width:100%;box-sizing:border-box;justify-content:center;white-space:nowrap;overflow:hidden}.nav .chipw small{display:block;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;min-height:12px}.nav .chipw small:empty{display:block;visibility:hidden}
+.nav .who{display:inline-block;min-width:62px;text-align:center;white-space:nowrap}
+@media(max-width:760px){.nav .chipw{flex-direction:column;width:104px}}
