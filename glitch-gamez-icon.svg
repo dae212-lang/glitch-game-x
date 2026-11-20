@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" width="512" height="512"><defs>
+  <linearGradient id="lgF" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1a3a"/><stop offset="1" stop-color="#1a0b33"/></linearGradient>
+  <path id="lgBody" d="M30 44C20 44 14 54 12 70C10 84 14 92 22 92C30 92 34 84 40 78L88 78C94 84 98 92 106 92C114 92 118 84 116 70C114 54 108 44 98 44Z"/>
+  <path id="lgPad" d="M36 52h8v6h6v8h-6v6h-8v-6h-6v-8h6z"/>
+  <g id="lgCtl"><use href="#lgBody"/><use href="#lgPad"/><circle cx="86" cy="54" r="4.5"/><circle cx="96" cy="62" r="4.5"/><circle cx="86" cy="70" r="4.5"/><circle cx="76" cy="62" r="4.5"/></g>
+  <clipPath id="lgS1"><rect x="0" y="50" width="128" height="9"/></clipPath>
+  <clipPath id="lgS2"><rect x="0" y="68" width="128" height="7"/></clipPath>
+  <symbol id="gg-logo" viewBox="0 0 128 128">
+   <path d="M18 3H110L125 18V110L110 125H18L3 110V18Z" fill="url(#lgF)" stroke="#00f0ff" stroke-width="2.5"/>
+   <path d="M3 30V18L18 3H34M125 98V110L110 125H94" fill="none" stroke="#ff2bd6" stroke-width="4"/>
+   <path d="M14 112h16M98 16h16" stroke="#00f0ff" stroke-width="2" opacity=".6"/>
+   <g class="lg-r" fill="none" stroke="#ff2bd6" stroke-width="3"><use href="#lgCtl"/></g>
+   <g class="lg-c" fill="none" stroke="#00f0ff" stroke-width="3"><use href="#lgCtl"/></g>
+   <g fill="#06091a" stroke="#e8fdff" stroke-width="2.4" stroke-linejoin="round"><use href="#lgCtl"/></g>
+   <g clip-path="url(#lgS1)"><g class="lg-t1" fill="#06091a" stroke="#00f0ff" stroke-width="2.4"><use href="#lgCtl"/></g></g>
+   <g clip-path="url(#lgS2)"><g class="lg-t2" fill="#06091a" stroke="#ff2bd6" stroke-width="2.4"><use href="#lgCtl"/></g></g>
+   <g fill="#00f0ff" stroke="none"><use href="#lgPad"/><circle cx="86" cy="54" r="4.5" fill="#ff2bd6"/><circle cx="96" cy="62" r="4.5" fill="#b6ff00"/><circle cx="86" cy="70" r="4.5" fill="#ffd400"/><circle cx="76" cy="62" r="4.5" fill="#00f0ff"/></g>
+   <path d="M52 96l6-8h12l6-8" fill="none" stroke="#b6ff00" stroke-width="2" opacity=".7"/>
+  </symbol>
+ </defs><use href="#gg-logo"/></svg>
